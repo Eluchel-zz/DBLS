@@ -1,0 +1,1171 @@
+AB66 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+AB66 .=> phpCAS::setCasServerCACert('cert_location') [index.php:5]
+AB66 .<= ''
+AB66 .=> phpCAS::forceAuthentication() [index.php:6]
+AB66 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+AB66 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+AB66 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+AB66 .|    |    |    |    no user found [Client.php:1592]
+AB66 .|    |    |    <= false
+AB66 .|    |    |    no ticket found [Client.php:1453]
+AB66 .|    |    <= false
+AB66 .|    |    => CAS_Client::redirectToCas(false) [Client.php:1254]
+AB66 .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1613]
+AB66 .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+AB66 .|    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+AB66 .|    |    |    |    <= 'http://localhost:8000/dbls/'
+AB66 .|    |    |    <= 'https://cas.byu.edu/cas/login?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+AB66 .|    |    |    Redirect to : https://cas.byu.edu/cas/login?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F [Client.php:1620]
+AB66 .|    |    |    exit()
+AB66 .|    |    |    -
+AB66 .|    |    -
+AB66 .|    -
+9685 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+9685 .=> phpCAS::setCasServerCACert('cert_location') [index.php:5]
+9685 .<= ''
+9685 .=> phpCAS::forceAuthentication() [index.php:6]
+9685 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+9685 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+9685 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+9685 .|    |    |    |    no user found [Client.php:1592]
+9685 .|    |    |    <= false
+9685 .|    |    |    CAS 2.0 ticket `ST-633441-eAqTP2oQAXkri9e1kVIQ-smaug4' is present [Client.php:1406]
+9685 .|    |    |    => CAS_Client::validateCAS20('', NULL, NULL) [Client.php:1409]
+9685 .|    |    |    |     [Client.php:3101]
+9685 .|    |    |    |    => CAS_Client::getServerServiceValidateURL() [Client.php:3108]
+9685 .|    |    |    |    |    => CAS_Client::getURL() [Client.php:453]
+9685 .|    |    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+9685 .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+9685 .|    |    |    |    <= 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+9685 .|    |    |    |    => CAS_Client::_readURL('https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-633441-eAqTP2oQAXkri9e1kVIQ-smaug4', NULL, NULL, NULL) [Client.php:3118]
+9685 .|    |    |    |    |    => CAS_Request_CurlRequest::sendRequest() [AbstractRequest.php:242]
+9685 .|    |    |    |    |    |    CURL: Set CURLOPT_CAINFO cert_location [CurlRequest.php:129]
+9685 .|    |    |    |    |    |    curl_exec() failed [CurlRequest.php:77]
+9685 .|    |    |    |    |    <= false
+9685 .|    |    |    |    <= false
+9685 .|    |    |    |    could not open URL 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-633441-eAqTP2oQAXkri9e1kVIQ-smaug4' to validate (CURL error #77: error setting certificate verify locations:
+9685 .|    |    |    |      CAfile: cert_location
+9685 .|    |    |    |      CApath: none) [Client.php:3121]
+9685 .|    |    |    |    => CAS_AuthenticationException::__construct(CAS_Client, 'Ticket not validated', 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-633441-eAqTP2oQAXkri9e1kVIQ-smaug4', true) [Client.php:3125]
+9685 .|    |    |    |    |    => CAS_Client::getURL() [AuthenticationException.php:76]
+9685 .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+9685 .|    |    |    |    |    CAS URL: https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-633441-eAqTP2oQAXkri9e1kVIQ-smaug4 [AuthenticationException.php:79]
+9685 .|    |    |    |    |    Authentication failure: Ticket not validated [AuthenticationException.php:80]
+9685 .|    |    |    |    |    Reason: no response from the CAS server [AuthenticationException.php:82]
+9685 .|    |    |    |    |    exit()
+9685 .|    |    |    |    |    -
+9685 .|    |    |    |    -
+9685 .|    |    |    -
+9685 .|    |    -
+9685 .|    -
+7819 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+7819 .=> phpCAS::setCasServerCACert('../CAS/cas_ca.pem') [index.php:5]
+7819 .<= ''
+7819 .=> phpCAS::forceAuthentication() [index.php:6]
+7819 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+7819 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+7819 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+7819 .|    |    |    |    no user found [Client.php:1592]
+7819 .|    |    |    <= false
+7819 .|    |    |    CAS 2.0 ticket `ST-633441-eAqTP2oQAXkri9e1kVIQ-smaug4' is present [Client.php:1406]
+7819 .|    |    |    => CAS_Client::validateCAS20('', NULL, NULL) [Client.php:1409]
+7819 .|    |    |    |     [Client.php:3101]
+7819 .|    |    |    |    => CAS_Client::getServerServiceValidateURL() [Client.php:3108]
+7819 .|    |    |    |    |    => CAS_Client::getURL() [Client.php:453]
+7819 .|    |    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+7819 .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+7819 .|    |    |    |    <= 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+7819 .|    |    |    |    => CAS_Client::_readURL('https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-633441-eAqTP2oQAXkri9e1kVIQ-smaug4', NULL, NULL, NULL) [Client.php:3118]
+7819 .|    |    |    |    |    => CAS_Request_CurlRequest::sendRequest() [AbstractRequest.php:242]
+7819 .|    |    |    |    |    |    CURL: Set CURLOPT_CAINFO ../CAS/cas_ca.pem [CurlRequest.php:129]
+7819 .|    |    |    |    |    |    curl_exec() failed [CurlRequest.php:77]
+7819 .|    |    |    |    |    <= false
+7819 .|    |    |    |    <= false
+7819 .|    |    |    |    could not open URL 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-633441-eAqTP2oQAXkri9e1kVIQ-smaug4' to validate (CURL error #77: error setting certificate verify locations:
+7819 .|    |    |    |      CAfile: ../CAS/cas_ca.pem
+7819 .|    |    |    |      CApath: none) [Client.php:3121]
+7819 .|    |    |    |    => CAS_AuthenticationException::__construct(CAS_Client, 'Ticket not validated', 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-633441-eAqTP2oQAXkri9e1kVIQ-smaug4', true) [Client.php:3125]
+7819 .|    |    |    |    |    => CAS_Client::getURL() [AuthenticationException.php:76]
+7819 .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+7819 .|    |    |    |    |    CAS URL: https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-633441-eAqTP2oQAXkri9e1kVIQ-smaug4 [AuthenticationException.php:79]
+7819 .|    |    |    |    |    Authentication failure: Ticket not validated [AuthenticationException.php:80]
+7819 .|    |    |    |    |    Reason: no response from the CAS server [AuthenticationException.php:82]
+7819 .|    |    |    |    |    exit()
+7819 .|    |    |    |    |    -
+7819 .|    |    |    |    -
+7819 .|    |    |    -
+7819 .|    |    -
+7819 .|    -
+1B85 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+1B85 .=> phpCAS::forceAuthentication() [index.php:6]
+1B85 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+1B85 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+1B85 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+1B85 .|    |    |    |    no user found [Client.php:1592]
+1B85 .|    |    |    <= false
+1B85 .|    |    |    CAS 2.0 ticket `ST-633441-eAqTP2oQAXkri9e1kVIQ-smaug4' is present [Client.php:1406]
+1B85 .|    |    |    => CAS_Client::validateCAS20('', NULL, NULL) [Client.php:1409]
+1B85 .|    |    |    |     [Client.php:3101]
+1B85 .|    |    |    |    => CAS_Client::getServerServiceValidateURL() [Client.php:3108]
+1B85 .|    |    |    |    |    => CAS_Client::getURL() [Client.php:453]
+1B85 .|    |    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+1B85 .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+1B85 .|    |    |    |    <= 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+1B85 .|    |    |    |    => CAS_Client::_readURL('https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-633441-eAqTP2oQAXkri9e1kVIQ-smaug4', NULL, NULL, NULL) [Client.php:3118]
+1B85 .|    |    |    |    |    => CAS_Request_CurlRequest::sendRequest() [AbstractRequest.php:242]
+1B85 .|    |    |    |    |    |    CURL: Set CURLOPT_CAINFO ../CAS/cas_ca.pem [CurlRequest.php:129]
+1B85 .|    |    |    |    |    |    curl_exec() failed [CurlRequest.php:77]
+1B85 .|    |    |    |    |    <= false
+1B85 .|    |    |    |    <= false
+1B85 .|    |    |    |    could not open URL 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-633441-eAqTP2oQAXkri9e1kVIQ-smaug4' to validate (CURL error #77: error setting certificate verify locations:
+1B85 .|    |    |    |      CAfile: ../CAS/cas_ca.pem
+1B85 .|    |    |    |      CApath: none) [Client.php:3121]
+1B85 .|    |    |    |    => CAS_AuthenticationException::__construct(CAS_Client, 'Ticket not validated', 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-633441-eAqTP2oQAXkri9e1kVIQ-smaug4', true) [Client.php:3125]
+1B85 .|    |    |    |    |    => CAS_Client::getURL() [AuthenticationException.php:76]
+1B85 .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+1B85 .|    |    |    |    |    CAS URL: https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-633441-eAqTP2oQAXkri9e1kVIQ-smaug4 [AuthenticationException.php:79]
+1B85 .|    |    |    |    |    Authentication failure: Ticket not validated [AuthenticationException.php:80]
+1B85 .|    |    |    |    |    Reason: no response from the CAS server [AuthenticationException.php:82]
+1B85 .|    |    |    |    |    exit()
+1B85 .|    |    |    |    |    -
+1B85 .|    |    |    |    -
+1B85 .|    |    |    -
+1B85 .|    |    -
+1B85 .|    -
+5491 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+5491 .=> phpCAS::forceAuthentication() [index.php:6]
+5491 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+5491 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+5491 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+5491 .|    |    |    |    no user found [Client.php:1592]
+5491 .|    |    |    <= false
+5491 .|    |    |    no ticket found [Client.php:1453]
+5491 .|    |    <= false
+5491 .|    |    => CAS_Client::redirectToCas(false) [Client.php:1254]
+5491 .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1613]
+5491 .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+5491 .|    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+5491 .|    |    |    |    <= 'http://localhost:8000/dbls/'
+5491 .|    |    |    <= 'https://cas.byu.edu/cas/login?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+5491 .|    |    |    Redirect to : https://cas.byu.edu/cas/login?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F [Client.php:1620]
+5491 .|    |    |    exit()
+5491 .|    |    |    -
+5491 .|    |    -
+5491 .|    -
+B861 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+B861 .=> phpCAS::forceAuthentication() [index.php:6]
+B861 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+B861 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+B861 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+B861 .|    |    |    |    no user found [Client.php:1592]
+B861 .|    |    |    <= false
+B861 .|    |    |    CAS 2.0 ticket `ST-635001-VuZGdm4QpDMW5dL62dmR-smaug4' is present [Client.php:1406]
+B861 .|    |    |    => CAS_Client::validateCAS20('', NULL, NULL) [Client.php:1409]
+B861 .|    |    |    |     [Client.php:3101]
+B861 .|    |    |    |    => CAS_Client::getServerServiceValidateURL() [Client.php:3108]
+B861 .|    |    |    |    |    => CAS_Client::getURL() [Client.php:453]
+B861 .|    |    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+B861 .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+B861 .|    |    |    |    <= 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+B861 .|    |    |    |    => CAS_Client::_readURL('https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-635001-VuZGdm4QpDMW5dL62dmR-smaug4', NULL, NULL, NULL) [Client.php:3118]
+B861 .|    |    |    |    |    => CAS_Request_CurlRequest::sendRequest() [AbstractRequest.php:242]
+B861 .|    |    |    |    |    |    CURL: Set CURLOPT_CAINFO ../CAS/cas_ca.pem [CurlRequest.php:129]
+B861 .|    |    |    |    |    |    curl_exec() failed [CurlRequest.php:77]
+B861 .|    |    |    |    |    <= false
+B861 .|    |    |    |    <= false
+B861 .|    |    |    |    could not open URL 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-635001-VuZGdm4QpDMW5dL62dmR-smaug4' to validate (CURL error #77: error setting certificate verify locations:
+B861 .|    |    |    |      CAfile: ../CAS/cas_ca.pem
+B861 .|    |    |    |      CApath: none) [Client.php:3121]
+B861 .|    |    |    |    => CAS_AuthenticationException::__construct(CAS_Client, 'Ticket not validated', 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-635001-VuZGdm4QpDMW5dL62dmR-smaug4', true) [Client.php:3125]
+B861 .|    |    |    |    |    => CAS_Client::getURL() [AuthenticationException.php:76]
+B861 .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+B861 .|    |    |    |    |    CAS URL: https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-635001-VuZGdm4QpDMW5dL62dmR-smaug4 [AuthenticationException.php:79]
+B861 .|    |    |    |    |    Authentication failure: Ticket not validated [AuthenticationException.php:80]
+B861 .|    |    |    |    |    Reason: no response from the CAS server [AuthenticationException.php:82]
+B861 .|    |    |    |    |    exit()
+B861 .|    |    |    |    |    -
+B861 .|    |    |    |    -
+B861 .|    |    |    -
+B861 .|    |    -
+B861 .|    -
+C9BF .START phpCAS-1.3.3 ****************** [CAS.php:438]
+C9BF .=> phpCAS::forceAuthentication() [index.php:6]
+C9BF .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+C9BF .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+C9BF .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+C9BF .|    |    |    |    no user found [Client.php:1592]
+C9BF .|    |    |    <= false
+C9BF .|    |    |    CAS 2.0 ticket `ST-635001-VuZGdm4QpDMW5dL62dmR-smaug4' is present [Client.php:1406]
+C9BF .|    |    |    => CAS_Client::validateCAS20('', NULL, NULL) [Client.php:1409]
+C9BF .|    |    |    |     [Client.php:3101]
+C9BF .|    |    |    |    => CAS_Client::getServerServiceValidateURL() [Client.php:3108]
+C9BF .|    |    |    |    |    => CAS_Client::getURL() [Client.php:453]
+C9BF .|    |    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+C9BF .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+C9BF .|    |    |    |    <= 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+C9BF .|    |    |    |    => CAS_Client::_readURL('https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-635001-VuZGdm4QpDMW5dL62dmR-smaug4', NULL, NULL, NULL) [Client.php:3118]
+C9BF .|    |    |    |    |    => CAS_Request_CurlRequest::sendRequest() [AbstractRequest.php:242]
+C9BF .|    |    |    |    |    |    Response Body: 
+C9BF .|    |    |    |    |    |    
+C9BF .|    |    |    |    |    |    
+C9BF .|    |    |    |    |    |    
+C9BF .|    |    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+C9BF .|    |    |    |    |    |    	<cas:authenticationFailure code='INVALID_TICKET'>
+C9BF .|    |    |    |    |    |    		ticket &#039;ST-635001-VuZGdm4QpDMW5dL62dmR-smaug4&#039; not recognized
+C9BF .|    |    |    |    |    |    	</cas:authenticationFailure>
+C9BF .|    |    |    |    |    |    </cas:serviceResponse>
+C9BF .|    |    |    |    |    |     [CurlRequest.php:84]
+C9BF .|    |    |    |    |    <= true
+C9BF .|    |    |    |    <= true
+C9BF .|    |    |    |    => CAS_AuthenticationException::__construct(CAS_Client, 'Ticket not validated', 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-635001-VuZGdm4QpDMW5dL62dmR-smaug4', false, false, '<cas:serviceResponse xmlns:cas=\'http://www.yale.edu/tp/cas\'>	<cas:authenticationFailure code=\'INVALID_TICKET\'>		ticket &#039;ST-635001-VuZGdm4QpDMW5dL62dmR-smaug4&#039; not recognized	</cas:authenticationFailure></cas:serviceResponse>', 'INVALID_TICKET', 'ticket \'ST-635001-VuZGdm4QpDMW5dL62dmR-smaug4\' not recognized') [Client.php:3209]
+C9BF .|    |    |    |    |    => CAS_Client::getURL() [AuthenticationException.php:76]
+C9BF .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+C9BF .|    |    |    |    |    CAS URL: https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-635001-VuZGdm4QpDMW5dL62dmR-smaug4 [AuthenticationException.php:79]
+C9BF .|    |    |    |    |    Authentication failure: Ticket not validated [AuthenticationException.php:80]
+C9BF .|    |    |    |    |    Reason: [INVALID_TICKET] CAS error: ticket 'ST-635001-VuZGdm4QpDMW5dL62dmR-smaug4' not recognized [AuthenticationException.php:96]
+C9BF .|    |    |    |    |    CAS response: 
+C9BF .|    |    |    |    |    
+C9BF .|    |    |    |    |    
+C9BF .|    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+C9BF .|    |    |    |    |    	<cas:authenticationFailure code='INVALID_TICKET'>
+C9BF .|    |    |    |    |    		ticket &#039;ST-635001-VuZGdm4QpDMW5dL62dmR-smaug4&#039; not recognized
+C9BF .|    |    |    |    |    	</cas:authenticationFailure>
+C9BF .|    |    |    |    |    </cas:serviceResponse> [AuthenticationException.php:101]
+C9BF .|    |    |    |    |    exit()
+C9BF .|    |    |    |    |    -
+C9BF .|    |    |    |    -
+C9BF .|    |    |    -
+C9BF .|    |    -
+C9BF .|    -
+6CC6 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+6CC6 .=> phpCAS::forceAuthentication() [index.php:6]
+6CC6 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+6CC6 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+6CC6 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+6CC6 .|    |    |    |    no user found [Client.php:1592]
+6CC6 .|    |    |    <= false
+6CC6 .|    |    |    no ticket found [Client.php:1453]
+6CC6 .|    |    <= false
+6CC6 .|    |    => CAS_Client::redirectToCas(false) [Client.php:1254]
+6CC6 .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1613]
+6CC6 .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+6CC6 .|    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+6CC6 .|    |    |    |    <= 'http://localhost:8000/dbls/'
+6CC6 .|    |    |    <= 'https://cas.byu.edu/cas/login?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+6CC6 .|    |    |    Redirect to : https://cas.byu.edu/cas/login?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F [Client.php:1620]
+6CC6 .|    |    |    exit()
+6CC6 .|    |    |    -
+6CC6 .|    |    -
+6CC6 .|    -
+5451 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+5451 .=> phpCAS::forceAuthentication() [index.php:6]
+5451 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+5451 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+5451 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+5451 .|    |    |    |    no user found [Client.php:1592]
+5451 .|    |    |    <= false
+5451 .|    |    |    CAS 2.0 ticket `ST-635793-RjnLp6seOxvHiitMwYWP-smaug4' is present [Client.php:1406]
+5451 .|    |    |    => CAS_Client::validateCAS20('', NULL, NULL) [Client.php:1409]
+5451 .|    |    |    |     [Client.php:3101]
+5451 .|    |    |    |    => CAS_Client::getServerServiceValidateURL() [Client.php:3108]
+5451 .|    |    |    |    |    => CAS_Client::getURL() [Client.php:453]
+5451 .|    |    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+5451 .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+5451 .|    |    |    |    <= 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+5451 .|    |    |    |    => CAS_Client::_readURL('https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-635793-RjnLp6seOxvHiitMwYWP-smaug4', NULL, NULL, NULL) [Client.php:3118]
+5451 .|    |    |    |    |    => CAS_Request_CurlRequest::sendRequest() [AbstractRequest.php:242]
+5451 .|    |    |    |    |    |    Response Body: 
+5451 .|    |    |    |    |    |    
+5451 .|    |    |    |    |    |    
+5451 .|    |    |    |    |    |    
+5451 .|    |    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+5451 .|    |    |    |    |    |        <cas:authenticationSuccess>
+5451 .|    |    |    |    |    |            <cas:user>benhall2</cas:user>
+5451 .|    |    |    |    |    |            
+5451 .|    |    |    |    |    |            <cas:attributes>
+5451 .|    |    |    |    |    |                
+5451 .|    |    |    |    |    |    
+5451 .|    |    |    |    |    |                    
+5451 .|    |    |    |    |    |                    <cas:netId>benhall2</cas:netId>
+5451 .|    |    |    |    |    |                
+5451 .|    |    |    |    |    |            </cas:attributes>
+5451 .|    |    |    |    |    |            
+5451 .|    |    |    |    |    |            
+5451 .|    |    |    |    |    |        </cas:authenticationSuccess>
+5451 .|    |    |    |    |    |    </cas:serviceResponse>
+5451 .|    |    |    |    |    |     [CurlRequest.php:84]
+5451 .|    |    |    |    |    <= true
+5451 .|    |    |    |    <= true
+5451 .|    |    |    |    => CAS_Client::_readExtraAttributesCas20(DOMNodeList) [Client.php:3176]
+5451 .|    |    |    |    |    Found nested jasig style attributes [Client.php:3263]
+5451 .|    |    |    |    |    Attribute [netId] = benhall2 [Client.php:3270]
+5451 .|    |    |    |    <= ''
+5451 .|    |    |    |    Storing Proxy List [Client.php:3185]
+5451 .|    |    |    |    => CAS_ProxyChain_AllowedList::isProxyListAllowed(array ()) [Client.php:3188]
+5451 .|    |    |    |    |    No proxies were found in the response [AllowedList.php:81]
+5451 .|    |    |    |    <= true
+5451 .|    |    |    |    => CAS_Client::_renameSession('ST-635793-RjnLp6seOxvHiitMwYWP-smaug4') [Client.php:3220]
+5451 .|    |    |    |    |    Killing session: cudqsp00b9tu89kmrbito9tr22 [Client.php:3582]
+5451 .|    |    |    |    |    Starting session: ST-635793-RjnLp6seOxvHiitMwYWP-smaug4 [Client.php:3586]
+5451 .|    |    |    |    |    Restoring old session vars [Client.php:3589]
+5451 .|    |    |    |    <= ''
+5451 .|    |    |    <= true
+5451 .|    |    |    CAS 2.0 ticket `ST-635793-RjnLp6seOxvHiitMwYWP-smaug4' was validated [Client.php:1412]
+5451 .|    |    |    => CAS_Client::getURL() [Client.php:1472]
+5451 .|    |    |    <= 'http://localhost:8000/dbls/'
+5451 .|    |    |    Prepare redirect to : http://localhost:8000/dbls/ [Client.php:1472]
+5451 .|    |    |    => CAS_Client::getURL() [Client.php:1474]
+5451 .|    |    |    <= 'http://localhost:8000/dbls/'
+5451 .|    |    |    exit()
+5451 .|    |    |    -
+5451 .|    |    -
+5451 .|    -
+AB0E .START phpCAS-1.3.3 ****************** [CAS.php:438]
+AB0E .=> phpCAS::forceAuthentication() [index.php:6]
+AB0E .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+AB0E .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+AB0E .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+AB0E .|    |    |    |    user = `benhall2' [Client.php:1579]
+AB0E .|    |    |    <= true
+AB0E .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+AB0E .|    |    <= true
+AB0E .|    |    no need to authenticate [Client.php:1247]
+AB0E .|    <= true
+AB0E .<= ''
+E4FC .START phpCAS-1.3.3 ****************** [CAS.php:438]
+E4FC .=> phpCAS::forceAuthentication() [index.php:6]
+E4FC .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+E4FC .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+E4FC .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+E4FC .|    |    |    |    user = `benhall2' [Client.php:1579]
+E4FC .|    |    |    <= true
+E4FC .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+E4FC .|    |    <= true
+E4FC .|    |    no need to authenticate [Client.php:1247]
+E4FC .|    <= true
+E4FC .<= ''
+1AF3 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+1AF3 .=> phpCAS::forceAuthentication() [index.php:6]
+1AF3 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+1AF3 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+1AF3 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+1AF3 .|    |    |    |    no user found [Client.php:1592]
+1AF3 .|    |    |    <= false
+1AF3 .|    |    |    no ticket found [Client.php:1453]
+1AF3 .|    |    <= false
+1AF3 .|    |    => CAS_Client::redirectToCas(false) [Client.php:1254]
+1AF3 .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1613]
+1AF3 .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+1AF3 .|    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+1AF3 .|    |    |    |    <= 'http://localhost:8000/dbls/'
+1AF3 .|    |    |    <= 'https://cas.byu.edu/cas/login?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+1AF3 .|    |    |    Redirect to : https://cas.byu.edu/cas/login?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F [Client.php:1620]
+1AF3 .|    |    |    exit()
+1AF3 .|    |    |    -
+1AF3 .|    |    -
+1AF3 .|    -
+EEB3 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+EEB3 .=> phpCAS::forceAuthentication() [index.php:6]
+EEB3 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+EEB3 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+EEB3 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+EEB3 .|    |    |    |    no user found [Client.php:1592]
+EEB3 .|    |    |    <= false
+EEB3 .|    |    |    CAS 2.0 ticket `ST-624185-o0bIohtClHJvuskZZbhS-smaug3' is present [Client.php:1406]
+EEB3 .|    |    |    => CAS_Client::validateCAS20('', NULL, NULL) [Client.php:1409]
+EEB3 .|    |    |    |     [Client.php:3101]
+EEB3 .|    |    |    |    => CAS_Client::getServerServiceValidateURL() [Client.php:3108]
+EEB3 .|    |    |    |    |    => CAS_Client::getURL() [Client.php:453]
+EEB3 .|    |    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+EEB3 .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+EEB3 .|    |    |    |    <= 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+EEB3 .|    |    |    |    => CAS_Client::_readURL('https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-624185-o0bIohtClHJvuskZZbhS-smaug3', NULL, NULL, NULL) [Client.php:3118]
+EEB3 .|    |    |    |    |    => CAS_Request_CurlRequest::sendRequest() [AbstractRequest.php:242]
+EEB3 .|    |    |    |    |    |    Response Body: 
+EEB3 .|    |    |    |    |    |    
+EEB3 .|    |    |    |    |    |    
+EEB3 .|    |    |    |    |    |    
+EEB3 .|    |    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+EEB3 .|    |    |    |    |    |        <cas:authenticationSuccess>
+EEB3 .|    |    |    |    |    |            <cas:user>benhall2</cas:user>
+EEB3 .|    |    |    |    |    |            
+EEB3 .|    |    |    |    |    |            <cas:attributes>
+EEB3 .|    |    |    |    |    |                
+EEB3 .|    |    |    |    |    |    
+EEB3 .|    |    |    |    |    |                    
+EEB3 .|    |    |    |    |    |                    <cas:netId>benhall2</cas:netId>
+EEB3 .|    |    |    |    |    |                
+EEB3 .|    |    |    |    |    |            </cas:attributes>
+EEB3 .|    |    |    |    |    |            
+EEB3 .|    |    |    |    |    |            
+EEB3 .|    |    |    |    |    |        </cas:authenticationSuccess>
+EEB3 .|    |    |    |    |    |    </cas:serviceResponse>
+EEB3 .|    |    |    |    |    |     [CurlRequest.php:84]
+EEB3 .|    |    |    |    |    <= true
+EEB3 .|    |    |    |    <= true
+EEB3 .|    |    |    |    => CAS_Client::_readExtraAttributesCas20(DOMNodeList) [Client.php:3176]
+EEB3 .|    |    |    |    |    Found nested jasig style attributes [Client.php:3263]
+EEB3 .|    |    |    |    |    Attribute [netId] = benhall2 [Client.php:3270]
+EEB3 .|    |    |    |    <= ''
+EEB3 .|    |    |    |    Storing Proxy List [Client.php:3185]
+EEB3 .|    |    |    |    => CAS_ProxyChain_AllowedList::isProxyListAllowed(array ()) [Client.php:3188]
+EEB3 .|    |    |    |    |    No proxies were found in the response [AllowedList.php:81]
+EEB3 .|    |    |    |    <= true
+EEB3 .|    |    |    |    => CAS_Client::_renameSession('ST-624185-o0bIohtClHJvuskZZbhS-smaug3') [Client.php:3220]
+EEB3 .|    |    |    |    |    Killing session: vg5ekdmf77gm570o6g73cf5vb4 [Client.php:3582]
+EEB3 .|    |    |    |    |    Starting session: ST-624185-o0bIohtClHJvuskZZbhS-smaug3 [Client.php:3586]
+EEB3 .|    |    |    |    |    Restoring old session vars [Client.php:3589]
+EEB3 .|    |    |    |    <= ''
+EEB3 .|    |    |    <= true
+EEB3 .|    |    |    CAS 2.0 ticket `ST-624185-o0bIohtClHJvuskZZbhS-smaug3' was validated [Client.php:1412]
+EEB3 .|    |    |    => CAS_Client::getURL() [Client.php:1472]
+EEB3 .|    |    |    <= 'http://localhost:8000/dbls/'
+EEB3 .|    |    |    Prepare redirect to : http://localhost:8000/dbls/ [Client.php:1472]
+EEB3 .|    |    |    => CAS_Client::getURL() [Client.php:1474]
+EEB3 .|    |    |    <= 'http://localhost:8000/dbls/'
+EEB3 .|    |    |    exit()
+EEB3 .|    |    |    -
+EEB3 .|    |    -
+EEB3 .|    -
+47E5 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+47E5 .=> phpCAS::forceAuthentication() [index.php:6]
+47E5 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+47E5 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+47E5 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+47E5 .|    |    |    |    user = `benhall2' [Client.php:1579]
+47E5 .|    |    |    <= true
+47E5 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+47E5 .|    |    <= true
+47E5 .|    |    no need to authenticate [Client.php:1247]
+47E5 .|    <= true
+47E5 .<= ''
+2479 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+2479 .=> phpCAS::forceAuthentication() [index.php:6]
+2479 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+2479 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+2479 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+2479 .|    |    |    |    user = `benhall2' [Client.php:1579]
+2479 .|    |    |    <= true
+2479 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+2479 .|    |    <= true
+2479 .|    |    no need to authenticate [Client.php:1247]
+2479 .|    <= true
+2479 .<= ''
+B48D .START phpCAS-1.3.3 ****************** [CAS.php:438]
+B48D .=> phpCAS::forceAuthentication() [index.php:6]
+B48D .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+B48D .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+B48D .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+B48D .|    |    |    |    user = `benhall2' [Client.php:1579]
+B48D .|    |    |    <= true
+B48D .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+B48D .|    |    <= true
+B48D .|    |    no need to authenticate [Client.php:1247]
+B48D .|    <= true
+B48D .<= ''
+3E8F .START phpCAS-1.3.3 ****************** [CAS.php:438]
+3E8F .=> phpCAS::forceAuthentication() [index.php:6]
+3E8F .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+3E8F .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+3E8F .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+3E8F .|    |    |    |    no user found [Client.php:1592]
+3E8F .|    |    |    <= false
+3E8F .|    |    |    no ticket found [Client.php:1453]
+3E8F .|    |    <= false
+3E8F .|    |    => CAS_Client::redirectToCas(false) [Client.php:1254]
+3E8F .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1613]
+3E8F .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+3E8F .|    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+3E8F .|    |    |    |    <= 'http://localhost:8000/dbls/'
+3E8F .|    |    |    <= 'https://cas.byu.edu/cas/login?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+3E8F .|    |    |    Redirect to : https://cas.byu.edu/cas/login?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F [Client.php:1620]
+3E8F .|    |    |    exit()
+3E8F .|    |    |    -
+3E8F .|    |    -
+3E8F .|    -
+9696 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+9696 .=> phpCAS::forceAuthentication() [index.php:6]
+9696 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+9696 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+9696 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+9696 .|    |    |    |    user = `benhall2' [Client.php:1579]
+9696 .|    |    |    <= true
+9696 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+9696 .|    |    <= true
+9696 .|    |    no need to authenticate [Client.php:1247]
+9696 .|    <= true
+9696 .<= ''
+02E1 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+02E1 .=> phpCAS::forceAuthentication() [index.php:6]
+02E1 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+02E1 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+02E1 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+02E1 .|    |    |    |    user = `benhall2' [Client.php:1579]
+02E1 .|    |    |    <= true
+02E1 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+02E1 .|    |    <= true
+02E1 .|    |    no need to authenticate [Client.php:1247]
+02E1 .|    <= true
+02E1 .<= ''
+43B1 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+43B1 .=> phpCAS::forceAuthentication() [index.php:6]
+43B1 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+43B1 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+43B1 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+43B1 .|    |    |    |    user = `benhall2' [Client.php:1579]
+43B1 .|    |    |    <= true
+43B1 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+43B1 .|    |    <= true
+43B1 .|    |    no need to authenticate [Client.php:1247]
+43B1 .|    <= true
+43B1 .<= ''
+7DC9 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+7DC9 .=> phpCAS::forceAuthentication() [index.php:6]
+7DC9 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+7DC9 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+7DC9 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+7DC9 .|    |    |    |    user = `benhall2' [Client.php:1579]
+7DC9 .|    |    |    <= true
+7DC9 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+7DC9 .|    |    <= true
+7DC9 .|    |    no need to authenticate [Client.php:1247]
+7DC9 .|    <= true
+7DC9 .<= ''
+6215 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+6215 .=> phpCAS::forceAuthentication() [index.php:6]
+6215 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+6215 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+6215 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+6215 .|    |    |    |    user = `benhall2' [Client.php:1579]
+6215 .|    |    |    <= true
+6215 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+6215 .|    |    <= true
+6215 .|    |    no need to authenticate [Client.php:1247]
+6215 .|    <= true
+6215 .<= ''
+51BE .START phpCAS-1.3.3 ****************** [CAS.php:438]
+51BE .=> phpCAS::forceAuthentication() [index.php:6]
+51BE .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+51BE .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+51BE .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+51BE .|    |    |    |    user = `benhall2' [Client.php:1579]
+51BE .|    |    |    <= true
+51BE .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+51BE .|    |    <= true
+51BE .|    |    no need to authenticate [Client.php:1247]
+51BE .|    <= true
+51BE .<= ''
+DEEC .START phpCAS-1.3.3 ****************** [CAS.php:438]
+DEEC .=> phpCAS::forceAuthentication() [index.php:6]
+DEEC .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+DEEC .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+DEEC .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+DEEC .|    |    |    |    user = `benhall2' [Client.php:1579]
+DEEC .|    |    |    <= true
+DEEC .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+DEEC .|    |    <= true
+DEEC .|    |    no need to authenticate [Client.php:1247]
+DEEC .|    <= true
+DEEC .<= ''
+A47F .START phpCAS-1.3.3 ****************** [CAS.php:438]
+A47F .=> phpCAS::forceAuthentication() [index.php:6]
+A47F .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+A47F .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+A47F .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+A47F .|    |    |    |    user = `benhall2' [Client.php:1579]
+A47F .|    |    |    <= true
+A47F .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+A47F .|    |    <= true
+A47F .|    |    no need to authenticate [Client.php:1247]
+A47F .|    <= true
+A47F .<= ''
+8867 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+8867 .=> phpCAS::forceAuthentication() [index.php:6]
+8867 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+8867 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+8867 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+8867 .|    |    |    |    user = `benhall2' [Client.php:1579]
+8867 .|    |    |    <= true
+8867 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+8867 .|    |    <= true
+8867 .|    |    no need to authenticate [Client.php:1247]
+8867 .|    <= true
+8867 .<= ''
+F194 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+F194 .=> phpCAS::forceAuthentication() [index.php:6]
+F194 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+F194 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+F194 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+F194 .|    |    |    |    user = `benhall2' [Client.php:1579]
+F194 .|    |    |    <= true
+F194 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+F194 .|    |    <= true
+F194 .|    |    no need to authenticate [Client.php:1247]
+F194 .|    <= true
+F194 .<= ''
+761E .START phpCAS-1.3.3 ****************** [CAS.php:438]
+761E .=> phpCAS::forceAuthentication() [index.php:6]
+761E .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+761E .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+761E .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+761E .|    |    |    |    user = `benhall2' [Client.php:1579]
+761E .|    |    |    <= true
+761E .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+761E .|    |    <= true
+761E .|    |    no need to authenticate [Client.php:1247]
+761E .|    <= true
+761E .<= ''
+6A7A .START phpCAS-1.3.3 ****************** [CAS.php:438]
+6A7A .=> phpCAS::forceAuthentication() [index.php:6]
+6A7A .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+6A7A .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+6A7A .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+6A7A .|    |    |    |    user = `benhall2' [Client.php:1579]
+6A7A .|    |    |    <= true
+6A7A .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+6A7A .|    |    <= true
+6A7A .|    |    no need to authenticate [Client.php:1247]
+6A7A .|    <= true
+6A7A .<= ''
+F418 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+F418 .=> phpCAS::forceAuthentication() [index.php:6]
+F418 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+F418 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+F418 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+F418 .|    |    |    |    user = `benhall2' [Client.php:1579]
+F418 .|    |    |    <= true
+F418 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+F418 .|    |    <= true
+F418 .|    |    no need to authenticate [Client.php:1247]
+F418 .|    <= true
+F418 .<= ''
+C09F .START phpCAS-1.3.3 ****************** [CAS.php:438]
+C09F .=> phpCAS::forceAuthentication() [index.php:6]
+C09F .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+C09F .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+C09F .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+C09F .|    |    |    |    user = `benhall2' [Client.php:1579]
+C09F .|    |    |    <= true
+C09F .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+C09F .|    |    <= true
+C09F .|    |    no need to authenticate [Client.php:1247]
+C09F .|    <= true
+C09F .<= ''
+E5C1 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+E5C1 .=> phpCAS::forceAuthentication() [index.php:6]
+E5C1 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+E5C1 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+E5C1 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+E5C1 .|    |    |    |    no user found [Client.php:1592]
+E5C1 .|    |    |    <= false
+E5C1 .|    |    |    no ticket found [Client.php:1453]
+E5C1 .|    |    <= false
+E5C1 .|    |    => CAS_Client::redirectToCas(false) [Client.php:1254]
+E5C1 .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1613]
+E5C1 .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+E5C1 .|    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+E5C1 .|    |    |    |    <= 'http://localhost:8000/dbls/'
+E5C1 .|    |    |    <= 'https://cas.byu.edu/cas/login?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+E5C1 .|    |    |    Redirect to : https://cas.byu.edu/cas/login?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F [Client.php:1620]
+E5C1 .|    |    |    exit()
+E5C1 .|    |    |    -
+E5C1 .|    |    -
+E5C1 .|    -
+EC84 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+EC84 .=> phpCAS::forceAuthentication() [index.php:6]
+EC84 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+EC84 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+EC84 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+EC84 .|    |    |    |    no user found [Client.php:1592]
+EC84 .|    |    |    <= false
+EC84 .|    |    |    CAS 2.0 ticket `ST-665604-Wf37zc7ORQoiQCyUce0V-smaug3' is present [Client.php:1406]
+EC84 .|    |    |    => CAS_Client::validateCAS20('', NULL, NULL) [Client.php:1409]
+EC84 .|    |    |    |     [Client.php:3101]
+EC84 .|    |    |    |    => CAS_Client::getServerServiceValidateURL() [Client.php:3108]
+EC84 .|    |    |    |    |    => CAS_Client::getURL() [Client.php:453]
+EC84 .|    |    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+EC84 .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+EC84 .|    |    |    |    <= 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+EC84 .|    |    |    |    => CAS_Client::_readURL('https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-665604-Wf37zc7ORQoiQCyUce0V-smaug3', NULL, NULL, NULL) [Client.php:3118]
+EC84 .|    |    |    |    |    => CAS_Request_CurlRequest::sendRequest() [AbstractRequest.php:242]
+EC84 .|    |    |    |    |    |    CURL: Set CURLOPT_CAINFO ../CAS/cas_ca.pem [CurlRequest.php:129]
+EC84 .|    |    |    |    |    |    curl_exec() failed [CurlRequest.php:77]
+EC84 .|    |    |    |    |    <= false
+EC84 .|    |    |    |    <= false
+EC84 .|    |    |    |    could not open URL 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-665604-Wf37zc7ORQoiQCyUce0V-smaug3' to validate (CURL error #77: error setting certificate verify locations:
+EC84 .|    |    |    |      CAfile: ../CAS/cas_ca.pem
+EC84 .|    |    |    |      CApath: none) [Client.php:3121]
+EC84 .|    |    |    |    => CAS_AuthenticationException::__construct(CAS_Client, 'Ticket not validated', 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-665604-Wf37zc7ORQoiQCyUce0V-smaug3', true) [Client.php:3125]
+EC84 .|    |    |    |    |    => CAS_Client::getURL() [AuthenticationException.php:76]
+EC84 .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+EC84 .|    |    |    |    |    CAS URL: https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-665604-Wf37zc7ORQoiQCyUce0V-smaug3 [AuthenticationException.php:79]
+EC84 .|    |    |    |    |    Authentication failure: Ticket not validated [AuthenticationException.php:80]
+EC84 .|    |    |    |    |    Reason: no response from the CAS server [AuthenticationException.php:82]
+EC84 .|    |    |    |    |    exit()
+EC84 .|    |    |    |    |    -
+EC84 .|    |    |    |    -
+EC84 .|    |    |    -
+EC84 .|    |    -
+EC84 .|    -
+63EA .START phpCAS-1.3.3 ****************** [CAS.php:438]
+63EA .=> phpCAS::forceAuthentication() [index.php:6]
+63EA .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+63EA .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+63EA .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+63EA .|    |    |    |    no user found [Client.php:1592]
+63EA .|    |    |    <= false
+63EA .|    |    |    no ticket found [Client.php:1453]
+63EA .|    |    <= false
+63EA .|    |    => CAS_Client::redirectToCas(false) [Client.php:1254]
+63EA .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1613]
+63EA .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+63EA .|    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+63EA .|    |    |    |    <= 'http://localhost:8000/dbls/'
+63EA .|    |    |    <= 'https://cas.byu.edu/cas/login?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+63EA .|    |    |    Redirect to : https://cas.byu.edu/cas/login?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F [Client.php:1620]
+63EA .|    |    |    exit()
+63EA .|    |    |    -
+63EA .|    |    -
+63EA .|    -
+4F55 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+4F55 .=> phpCAS::forceAuthentication() [index.php:6]
+4F55 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+4F55 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+4F55 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+4F55 .|    |    |    |    no user found [Client.php:1592]
+4F55 .|    |    |    <= false
+4F55 .|    |    |    CAS 2.0 ticket `ST-665903-k94siidtP1aFaIffDCMq-smaug3' is present [Client.php:1406]
+4F55 .|    |    |    => CAS_Client::validateCAS20('', NULL, NULL) [Client.php:1409]
+4F55 .|    |    |    |     [Client.php:3101]
+4F55 .|    |    |    |    => CAS_Client::getServerServiceValidateURL() [Client.php:3108]
+4F55 .|    |    |    |    |    => CAS_Client::getURL() [Client.php:453]
+4F55 .|    |    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+4F55 .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+4F55 .|    |    |    |    <= 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+4F55 .|    |    |    |    => CAS_Client::_readURL('https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-665903-k94siidtP1aFaIffDCMq-smaug3', NULL, NULL, NULL) [Client.php:3118]
+4F55 .|    |    |    |    |    => CAS_Request_CurlRequest::sendRequest() [AbstractRequest.php:242]
+4F55 .|    |    |    |    |    |    CURL: Set CURLOPT_CAINFO ../CAS/cas_ca.pem [CurlRequest.php:129]
+4F55 .|    |    |    |    |    |    curl_exec() failed [CurlRequest.php:77]
+4F55 .|    |    |    |    |    <= false
+4F55 .|    |    |    |    <= false
+4F55 .|    |    |    |    could not open URL 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-665903-k94siidtP1aFaIffDCMq-smaug3' to validate (CURL error #77: error setting certificate verify locations:
+4F55 .|    |    |    |      CAfile: ../CAS/cas_ca.pem
+4F55 .|    |    |    |      CApath: none) [Client.php:3121]
+4F55 .|    |    |    |    => CAS_AuthenticationException::__construct(CAS_Client, 'Ticket not validated', 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-665903-k94siidtP1aFaIffDCMq-smaug3', true) [Client.php:3125]
+4F55 .|    |    |    |    |    => CAS_Client::getURL() [AuthenticationException.php:76]
+4F55 .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+4F55 .|    |    |    |    |    CAS URL: https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-665903-k94siidtP1aFaIffDCMq-smaug3 [AuthenticationException.php:79]
+4F55 .|    |    |    |    |    Authentication failure: Ticket not validated [AuthenticationException.php:80]
+4F55 .|    |    |    |    |    Reason: no response from the CAS server [AuthenticationException.php:82]
+4F55 .|    |    |    |    |    exit()
+4F55 .|    |    |    |    |    -
+4F55 .|    |    |    |    -
+4F55 .|    |    |    -
+4F55 .|    |    -
+4F55 .|    -
+587F .START phpCAS-1.3.3 ****************** [CAS.php:438]
+587F .=> phpCAS::forceAuthentication() [index.php:6]
+587F .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+587F .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+587F .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+587F .|    |    |    |    no user found [Client.php:1592]
+587F .|    |    |    <= false
+587F .|    |    |    CAS 2.0 ticket `ST-665903-k94siidtP1aFaIffDCMq-smaug3' is present [Client.php:1406]
+587F .|    |    |    => CAS_Client::validateCAS20('', NULL, NULL) [Client.php:1409]
+587F .|    |    |    |     [Client.php:3101]
+587F .|    |    |    |    => CAS_Client::getServerServiceValidateURL() [Client.php:3108]
+587F .|    |    |    |    |    => CAS_Client::getURL() [Client.php:453]
+587F .|    |    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+587F .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+587F .|    |    |    |    <= 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+587F .|    |    |    |    => CAS_Client::_readURL('https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-665903-k94siidtP1aFaIffDCMq-smaug3', NULL, NULL, NULL) [Client.php:3118]
+587F .|    |    |    |    |    => CAS_Request_CurlRequest::sendRequest() [AbstractRequest.php:242]
+587F .|    |    |    |    |    |    CURL: Set CURLOPT_CAINFO ../CAS/cas_ca.pem [CurlRequest.php:129]
+587F .|    |    |    |    |    |    curl_exec() failed [CurlRequest.php:77]
+587F .|    |    |    |    |    <= false
+587F .|    |    |    |    <= false
+587F .|    |    |    |    could not open URL 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-665903-k94siidtP1aFaIffDCMq-smaug3' to validate (CURL error #77: error setting certificate verify locations:
+587F .|    |    |    |      CAfile: ../CAS/cas_ca.pem
+587F .|    |    |    |      CApath: none) [Client.php:3121]
+587F .|    |    |    |    => CAS_AuthenticationException::__construct(CAS_Client, 'Ticket not validated', 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-665903-k94siidtP1aFaIffDCMq-smaug3', true) [Client.php:3125]
+587F .|    |    |    |    |    => CAS_Client::getURL() [AuthenticationException.php:76]
+587F .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+587F .|    |    |    |    |    CAS URL: https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-665903-k94siidtP1aFaIffDCMq-smaug3 [AuthenticationException.php:79]
+587F .|    |    |    |    |    Authentication failure: Ticket not validated [AuthenticationException.php:80]
+587F .|    |    |    |    |    Reason: no response from the CAS server [AuthenticationException.php:82]
+587F .|    |    |    |    |    exit()
+587F .|    |    |    |    |    -
+587F .|    |    |    |    -
+587F .|    |    |    -
+587F .|    |    -
+587F .|    -
+055D .START phpCAS-1.3.3 ****************** [CAS.php:438]
+055D .=> phpCAS::forceAuthentication() [index.php:6]
+055D .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+055D .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+055D .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+055D .|    |    |    |    no user found [Client.php:1592]
+055D .|    |    |    <= false
+055D .|    |    |    CAS 2.0 ticket `ST-665903-k94siidtP1aFaIffDCMq-smaug3' is present [Client.php:1406]
+055D .|    |    |    => CAS_Client::validateCAS20('', NULL, NULL) [Client.php:1409]
+055D .|    |    |    |     [Client.php:3101]
+055D .|    |    |    |    => CAS_Client::getServerServiceValidateURL() [Client.php:3108]
+055D .|    |    |    |    |    => CAS_Client::getURL() [Client.php:453]
+055D .|    |    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+055D .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+055D .|    |    |    |    <= 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+055D .|    |    |    |    => CAS_Client::_readURL('https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-665903-k94siidtP1aFaIffDCMq-smaug3', NULL, NULL, NULL) [Client.php:3118]
+055D .|    |    |    |    |    => CAS_Request_CurlRequest::sendRequest() [AbstractRequest.php:242]
+055D .|    |    |    |    |    |    CURL: Set CURLOPT_CAINFO ../CAS/cas_ca.pem [CurlRequest.php:129]
+055D .|    |    |    |    |    |    curl_exec() failed [CurlRequest.php:77]
+055D .|    |    |    |    |    <= false
+055D .|    |    |    |    <= false
+055D .|    |    |    |    could not open URL 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-665903-k94siidtP1aFaIffDCMq-smaug3' to validate (CURL error #77: error setting certificate verify locations:
+055D .|    |    |    |      CAfile: ../CAS/cas_ca.pem
+055D .|    |    |    |      CApath: none) [Client.php:3121]
+055D .|    |    |    |    => CAS_AuthenticationException::__construct(CAS_Client, 'Ticket not validated', 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-665903-k94siidtP1aFaIffDCMq-smaug3', true) [Client.php:3125]
+055D .|    |    |    |    |    => CAS_Client::getURL() [AuthenticationException.php:76]
+055D .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+055D .|    |    |    |    |    CAS URL: https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-665903-k94siidtP1aFaIffDCMq-smaug3 [AuthenticationException.php:79]
+055D .|    |    |    |    |    Authentication failure: Ticket not validated [AuthenticationException.php:80]
+055D .|    |    |    |    |    Reason: no response from the CAS server [AuthenticationException.php:82]
+055D .|    |    |    |    |    exit()
+055D .|    |    |    |    |    -
+055D .|    |    |    |    -
+055D .|    |    |    -
+055D .|    |    -
+055D .|    -
+C18B .START phpCAS-1.3.3 ****************** [CAS.php:438]
+C18B .=> phpCAS::forceAuthentication() [index.php:7]
+C18B .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+C18B .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+C18B .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+C18B .|    |    |    |    no user found [Client.php:1592]
+C18B .|    |    |    <= false
+C18B .|    |    |    CAS 2.0 ticket `ST-665903-k94siidtP1aFaIffDCMq-smaug3' is present [Client.php:1406]
+C18B .|    |    |    => CAS_Client::validateCAS20('', NULL, NULL) [Client.php:1409]
+C18B .|    |    |    |     [Client.php:3101]
+C18B .|    |    |    |    => CAS_Client::getServerServiceValidateURL() [Client.php:3108]
+C18B .|    |    |    |    |    => CAS_Client::getURL() [Client.php:453]
+C18B .|    |    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+C18B .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+C18B .|    |    |    |    <= 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+C18B .|    |    |    |    => CAS_Client::_readURL('https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-665903-k94siidtP1aFaIffDCMq-smaug3', NULL, NULL, NULL) [Client.php:3118]
+C18B .|    |    |    |    |    => CAS_Request_CurlRequest::sendRequest() [AbstractRequest.php:242]
+C18B .|    |    |    |    |    |    Response Body: 
+C18B .|    |    |    |    |    |    
+C18B .|    |    |    |    |    |    
+C18B .|    |    |    |    |    |    
+C18B .|    |    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+C18B .|    |    |    |    |    |    	<cas:authenticationFailure code='INVALID_TICKET'>
+C18B .|    |    |    |    |    |    		ticket &#039;ST-665903-k94siidtP1aFaIffDCMq-smaug3&#039; not recognized
+C18B .|    |    |    |    |    |    	</cas:authenticationFailure>
+C18B .|    |    |    |    |    |    </cas:serviceResponse>
+C18B .|    |    |    |    |    |     [CurlRequest.php:84]
+C18B .|    |    |    |    |    <= true
+C18B .|    |    |    |    <= true
+C18B .|    |    |    |    => CAS_AuthenticationException::__construct(CAS_Client, 'Ticket not validated', 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-665903-k94siidtP1aFaIffDCMq-smaug3', false, false, '<cas:serviceResponse xmlns:cas=\'http://www.yale.edu/tp/cas\'>	<cas:authenticationFailure code=\'INVALID_TICKET\'>		ticket &#039;ST-665903-k94siidtP1aFaIffDCMq-smaug3&#039; not recognized	</cas:authenticationFailure></cas:serviceResponse>', 'INVALID_TICKET', 'ticket \'ST-665903-k94siidtP1aFaIffDCMq-smaug3\' not recognized') [Client.php:3209]
+C18B .|    |    |    |    |    => CAS_Client::getURL() [AuthenticationException.php:76]
+C18B .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+C18B .|    |    |    |    |    CAS URL: https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-665903-k94siidtP1aFaIffDCMq-smaug3 [AuthenticationException.php:79]
+C18B .|    |    |    |    |    Authentication failure: Ticket not validated [AuthenticationException.php:80]
+C18B .|    |    |    |    |    Reason: [INVALID_TICKET] CAS error: ticket 'ST-665903-k94siidtP1aFaIffDCMq-smaug3' not recognized [AuthenticationException.php:96]
+C18B .|    |    |    |    |    CAS response: 
+C18B .|    |    |    |    |    
+C18B .|    |    |    |    |    
+C18B .|    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+C18B .|    |    |    |    |    	<cas:authenticationFailure code='INVALID_TICKET'>
+C18B .|    |    |    |    |    		ticket &#039;ST-665903-k94siidtP1aFaIffDCMq-smaug3&#039; not recognized
+C18B .|    |    |    |    |    	</cas:authenticationFailure>
+C18B .|    |    |    |    |    </cas:serviceResponse> [AuthenticationException.php:101]
+C18B .|    |    |    |    |    exit()
+C18B .|    |    |    |    |    -
+C18B .|    |    |    |    -
+C18B .|    |    |    -
+C18B .|    |    -
+C18B .|    -
+E3D2 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+E3D2 .=> phpCAS::forceAuthentication() [index.php:7]
+E3D2 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+E3D2 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+E3D2 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+E3D2 .|    |    |    |    no user found [Client.php:1592]
+E3D2 .|    |    |    <= false
+E3D2 .|    |    |    no ticket found [Client.php:1453]
+E3D2 .|    |    <= false
+E3D2 .|    |    => CAS_Client::redirectToCas(false) [Client.php:1254]
+E3D2 .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1613]
+E3D2 .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+E3D2 .|    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+E3D2 .|    |    |    |    <= 'http://localhost:8000/dbls/'
+E3D2 .|    |    |    <= 'https://cas.byu.edu/cas/login?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+E3D2 .|    |    |    Redirect to : https://cas.byu.edu/cas/login?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F [Client.php:1620]
+E3D2 .|    |    |    exit()
+E3D2 .|    |    |    -
+E3D2 .|    |    -
+E3D2 .|    -
+8121 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+8121 .=> phpCAS::forceAuthentication() [index.php:7]
+8121 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+8121 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+8121 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+8121 .|    |    |    |    no user found [Client.php:1592]
+8121 .|    |    |    <= false
+8121 .|    |    |    CAS 2.0 ticket `ST-668770-YBdYrCdoANdadoCPMzTK-smaug3' is present [Client.php:1406]
+8121 .|    |    |    => CAS_Client::validateCAS20('', NULL, NULL) [Client.php:1409]
+8121 .|    |    |    |     [Client.php:3101]
+8121 .|    |    |    |    => CAS_Client::getServerServiceValidateURL() [Client.php:3108]
+8121 .|    |    |    |    |    => CAS_Client::getURL() [Client.php:453]
+8121 .|    |    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+8121 .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+8121 .|    |    |    |    <= 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+8121 .|    |    |    |    => CAS_Client::_readURL('https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-668770-YBdYrCdoANdadoCPMzTK-smaug3', NULL, NULL, NULL) [Client.php:3118]
+8121 .|    |    |    |    |    => CAS_Request_CurlRequest::sendRequest() [AbstractRequest.php:242]
+8121 .|    |    |    |    |    |    Response Body: 
+8121 .|    |    |    |    |    |    
+8121 .|    |    |    |    |    |    
+8121 .|    |    |    |    |    |    
+8121 .|    |    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+8121 .|    |    |    |    |    |        <cas:authenticationSuccess>
+8121 .|    |    |    |    |    |            <cas:user>benhall2</cas:user>
+8121 .|    |    |    |    |    |            
+8121 .|    |    |    |    |    |            <cas:attributes>
+8121 .|    |    |    |    |    |                
+8121 .|    |    |    |    |    |    
+8121 .|    |    |    |    |    |                    
+8121 .|    |    |    |    |    |                    <cas:netId>benhall2</cas:netId>
+8121 .|    |    |    |    |    |                
+8121 .|    |    |    |    |    |            </cas:attributes>
+8121 .|    |    |    |    |    |            
+8121 .|    |    |    |    |    |            
+8121 .|    |    |    |    |    |        </cas:authenticationSuccess>
+8121 .|    |    |    |    |    |    </cas:serviceResponse>
+8121 .|    |    |    |    |    |     [CurlRequest.php:84]
+8121 .|    |    |    |    |    <= true
+8121 .|    |    |    |    <= true
+8121 .|    |    |    |    => CAS_Client::_readExtraAttributesCas20(DOMNodeList) [Client.php:3176]
+8121 .|    |    |    |    |    Found nested jasig style attributes [Client.php:3263]
+8121 .|    |    |    |    |    Attribute [netId] = benhall2 [Client.php:3270]
+8121 .|    |    |    |    <= ''
+8121 .|    |    |    |    Storing Proxy List [Client.php:3185]
+8121 .|    |    |    |    => CAS_ProxyChain_AllowedList::isProxyListAllowed(array ()) [Client.php:3188]
+8121 .|    |    |    |    |    No proxies were found in the response [AllowedList.php:81]
+8121 .|    |    |    |    <= true
+8121 .|    |    |    |    => CAS_Client::_renameSession('ST-668770-YBdYrCdoANdadoCPMzTK-smaug3') [Client.php:3220]
+8121 .|    |    |    |    |    Killing session: r3ekg997c5g47cvhs2ub4ahts4 [Client.php:3582]
+8121 .|    |    |    |    |    Starting session: ST-668770-YBdYrCdoANdadoCPMzTK-smaug3 [Client.php:3586]
+8121 .|    |    |    |    |    Restoring old session vars [Client.php:3589]
+8121 .|    |    |    |    <= ''
+8121 .|    |    |    <= true
+8121 .|    |    |    CAS 2.0 ticket `ST-668770-YBdYrCdoANdadoCPMzTK-smaug3' was validated [Client.php:1412]
+8121 .|    |    |    => CAS_Client::getURL() [Client.php:1472]
+8121 .|    |    |    <= 'http://localhost:8000/dbls/'
+8121 .|    |    |    Prepare redirect to : http://localhost:8000/dbls/ [Client.php:1472]
+8121 .|    |    |    => CAS_Client::getURL() [Client.php:1474]
+8121 .|    |    |    <= 'http://localhost:8000/dbls/'
+8121 .|    |    |    exit()
+8121 .|    |    |    -
+8121 .|    |    -
+1678 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+8121 .|    -
+1678 .=> phpCAS::forceAuthentication() [index.php:7]
+1678 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+1678 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+1678 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+1678 .|    |    |    |    user = `benhall2' [Client.php:1579]
+1678 .|    |    |    <= true
+1678 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+1678 .|    |    <= true
+1678 .|    |    no need to authenticate [Client.php:1247]
+1678 .|    <= true
+1678 .<= ''
+D6A4 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+D6A4 .=> phpCAS::forceAuthentication() [index.php:7]
+D6A4 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+D6A4 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+D6A4 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+D6A4 .|    |    |    |    no user found [Client.php:1592]
+D6A4 .|    |    |    <= false
+D6A4 .|    |    |    no ticket found [Client.php:1453]
+D6A4 .|    |    <= false
+D6A4 .|    |    => CAS_Client::redirectToCas(false) [Client.php:1254]
+D6A4 .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1613]
+D6A4 .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+D6A4 .|    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+D6A4 .|    |    |    |    <= 'http://localhost:8000/dbls/'
+D6A4 .|    |    |    <= 'https://cas.byu.edu/cas/login?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+D6A4 .|    |    |    Redirect to : https://cas.byu.edu/cas/login?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F [Client.php:1620]
+D6A4 .|    |    |    exit()
+D6A4 .|    |    |    -
+D6A4 .|    |    -
+D6A4 .|    -
+9706 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+9706 .=> phpCAS::forceAuthentication() [index.php:7]
+9706 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+9706 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+9706 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+9706 .|    |    |    |    no user found [Client.php:1592]
+9706 .|    |    |    <= false
+9706 .|    |    |    CAS 2.0 ticket `ST-704753-PSla4Jd2o3pfkdnXuOeo-smaug4' is present [Client.php:1406]
+9706 .|    |    |    => CAS_Client::validateCAS20('', NULL, NULL) [Client.php:1409]
+9706 .|    |    |    |     [Client.php:3101]
+9706 .|    |    |    |    => CAS_Client::getServerServiceValidateURL() [Client.php:3108]
+9706 .|    |    |    |    |    => CAS_Client::getURL() [Client.php:453]
+9706 .|    |    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+9706 .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+9706 .|    |    |    |    <= 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+9706 .|    |    |    |    => CAS_Client::_readURL('https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-704753-PSla4Jd2o3pfkdnXuOeo-smaug4', NULL, NULL, NULL) [Client.php:3118]
+9706 .|    |    |    |    |    => CAS_Request_CurlRequest::sendRequest() [AbstractRequest.php:242]
+9706 .|    |    |    |    |    |    Response Body: 
+9706 .|    |    |    |    |    |    
+9706 .|    |    |    |    |    |    
+9706 .|    |    |    |    |    |    
+9706 .|    |    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+9706 .|    |    |    |    |    |        <cas:authenticationSuccess>
+9706 .|    |    |    |    |    |            <cas:user>benhall2</cas:user>
+9706 .|    |    |    |    |    |            
+9706 .|    |    |    |    |    |            <cas:attributes>
+9706 .|    |    |    |    |    |                
+9706 .|    |    |    |    |    |    
+9706 .|    |    |    |    |    |                    
+9706 .|    |    |    |    |    |                    <cas:netId>benhall2</cas:netId>
+9706 .|    |    |    |    |    |                
+9706 .|    |    |    |    |    |            </cas:attributes>
+9706 .|    |    |    |    |    |            
+9706 .|    |    |    |    |    |            
+9706 .|    |    |    |    |    |        </cas:authenticationSuccess>
+9706 .|    |    |    |    |    |    </cas:serviceResponse>
+9706 .|    |    |    |    |    |     [CurlRequest.php:84]
+9706 .|    |    |    |    |    <= true
+9706 .|    |    |    |    <= true
+9706 .|    |    |    |    => CAS_Client::_readExtraAttributesCas20(DOMNodeList) [Client.php:3176]
+9706 .|    |    |    |    |    Found nested jasig style attributes [Client.php:3263]
+9706 .|    |    |    |    |    Attribute [netId] = benhall2 [Client.php:3270]
+9706 .|    |    |    |    <= ''
+9706 .|    |    |    |    Storing Proxy List [Client.php:3185]
+9706 .|    |    |    |    => CAS_ProxyChain_AllowedList::isProxyListAllowed(array ()) [Client.php:3188]
+9706 .|    |    |    |    |    No proxies were found in the response [AllowedList.php:81]
+9706 .|    |    |    |    <= true
+9706 .|    |    |    |    => CAS_Client::_renameSession('ST-704753-PSla4Jd2o3pfkdnXuOeo-smaug4') [Client.php:3220]
+9706 .|    |    |    |    |    Killing session: vt17g4ngd84ovlo6du72ji1fr5 [Client.php:3582]
+9706 .|    |    |    |    |    Starting session: ST-704753-PSla4Jd2o3pfkdnXuOeo-smaug4 [Client.php:3586]
+9706 .|    |    |    |    |    Restoring old session vars [Client.php:3589]
+9706 .|    |    |    |    <= ''
+9706 .|    |    |    <= true
+9706 .|    |    |    CAS 2.0 ticket `ST-704753-PSla4Jd2o3pfkdnXuOeo-smaug4' was validated [Client.php:1412]
+9706 .|    |    |    => CAS_Client::getURL() [Client.php:1472]
+9706 .|    |    |    <= 'http://localhost:8000/dbls/'
+9706 .|    |    |    Prepare redirect to : http://localhost:8000/dbls/ [Client.php:1472]
+9706 .|    |    |    => CAS_Client::getURL() [Client.php:1474]
+9706 .|    |    |    <= 'http://localhost:8000/dbls/'
+9706 .|    |    |    exit()
+9706 .|    |    |    -
+9706 .|    |    -
+DC9A .START phpCAS-1.3.3 ****************** [CAS.php:438]
+9706 .|    -
+DC9A .=> phpCAS::forceAuthentication() [index.php:7]
+DC9A .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+DC9A .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+DC9A .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+DC9A .|    |    |    |    user = `benhall2' [Client.php:1579]
+DC9A .|    |    |    <= true
+DC9A .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+DC9A .|    |    <= true
+DC9A .|    |    no need to authenticate [Client.php:1247]
+DC9A .|    <= true
+DC9A .<= ''
+35C3 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+35C3 .=> phpCAS::forceAuthentication() [index.php:7]
+35C3 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+35C3 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+35C3 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+35C3 .|    |    |    |    no user found [Client.php:1592]
+35C3 .|    |    |    <= false
+35C3 .|    |    |    no ticket found [Client.php:1453]
+35C3 .|    |    <= false
+35C3 .|    |    => CAS_Client::redirectToCas(false) [Client.php:1254]
+35C3 .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1613]
+35C3 .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+35C3 .|    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+35C3 .|    |    |    |    <= 'http://localhost:8000/dbls/'
+35C3 .|    |    |    <= 'https://cas.byu.edu/cas/login?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+35C3 .|    |    |    Redirect to : https://cas.byu.edu/cas/login?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F [Client.php:1620]
+35C3 .|    |    |    exit()
+35C3 .|    |    |    -
+35C3 .|    |    -
+35C3 .|    -
+0A61 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+0A61 .=> phpCAS::forceAuthentication() [index.php:7]
+0A61 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+0A61 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+0A61 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+0A61 .|    |    |    |    no user found [Client.php:1592]
+0A61 .|    |    |    <= false
+0A61 .|    |    |    CAS 2.0 ticket `ST-754425-dESg5fNkLk9pZl47DlCJ-smaug2' is present [Client.php:1406]
+0A61 .|    |    |    => CAS_Client::validateCAS20('', NULL, NULL) [Client.php:1409]
+0A61 .|    |    |    |     [Client.php:3101]
+0A61 .|    |    |    |    => CAS_Client::getServerServiceValidateURL() [Client.php:3108]
+0A61 .|    |    |    |    |    => CAS_Client::getURL() [Client.php:453]
+0A61 .|    |    |    |    |    |    Final URI: http://localhost:8000/dbls/ [Client.php:3466]
+0A61 .|    |    |    |    |    <= 'http://localhost:8000/dbls/'
+0A61 .|    |    |    |    <= 'https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F'
+0A61 .|    |    |    |    => CAS_Client::_readURL('https://cas.byu.edu/cas/serviceValidate?service=http%3A%2F%2Flocalhost%3A8000%2Fdbls%2F&ticket=ST-754425-dESg5fNkLk9pZl47DlCJ-smaug2', NULL, NULL, NULL) [Client.php:3118]
+0A61 .|    |    |    |    |    => CAS_Request_CurlRequest::sendRequest() [AbstractRequest.php:242]
+0A61 .|    |    |    |    |    |    Response Body: 
+0A61 .|    |    |    |    |    |    
+0A61 .|    |    |    |    |    |    
+0A61 .|    |    |    |    |    |    
+0A61 .|    |    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+0A61 .|    |    |    |    |    |        <cas:authenticationSuccess>
+0A61 .|    |    |    |    |    |            <cas:user>benhall2</cas:user>
+0A61 .|    |    |    |    |    |            
+0A61 .|    |    |    |    |    |            <cas:attributes>
+0A61 .|    |    |    |    |    |                
+0A61 .|    |    |    |    |    |    
+0A61 .|    |    |    |    |    |                    
+0A61 .|    |    |    |    |    |                    <cas:netId>benhall2</cas:netId>
+0A61 .|    |    |    |    |    |                
+0A61 .|    |    |    |    |    |            </cas:attributes>
+0A61 .|    |    |    |    |    |            
+0A61 .|    |    |    |    |    |            
+0A61 .|    |    |    |    |    |        </cas:authenticationSuccess>
+0A61 .|    |    |    |    |    |    </cas:serviceResponse>
+0A61 .|    |    |    |    |    |     [CurlRequest.php:84]
+0A61 .|    |    |    |    |    <= true
+0A61 .|    |    |    |    <= true
+0A61 .|    |    |    |    => CAS_Client::_readExtraAttributesCas20(DOMNodeList) [Client.php:3176]
+0A61 .|    |    |    |    |    Found nested jasig style attributes [Client.php:3263]
+0A61 .|    |    |    |    |    Attribute [netId] = benhall2 [Client.php:3270]
+0A61 .|    |    |    |    <= ''
+0A61 .|    |    |    |    Storing Proxy List [Client.php:3185]
+0A61 .|    |    |    |    => CAS_ProxyChain_AllowedList::isProxyListAllowed(array ()) [Client.php:3188]
+0A61 .|    |    |    |    |    No proxies were found in the response [AllowedList.php:81]
+0A61 .|    |    |    |    <= true
+0A61 .|    |    |    |    => CAS_Client::_renameSession('ST-754425-dESg5fNkLk9pZl47DlCJ-smaug2') [Client.php:3220]
+0A61 .|    |    |    |    |    Killing session: 8n06pfuc2cail1qob1ffv2hns4 [Client.php:3582]
+0A61 .|    |    |    |    |    Starting session: ST-754425-dESg5fNkLk9pZl47DlCJ-smaug2 [Client.php:3586]
+0A61 .|    |    |    |    |    Restoring old session vars [Client.php:3589]
+0A61 .|    |    |    |    <= ''
+0A61 .|    |    |    <= true
+0A61 .|    |    |    CAS 2.0 ticket `ST-754425-dESg5fNkLk9pZl47DlCJ-smaug2' was validated [Client.php:1412]
+0A61 .|    |    |    => CAS_Client::getURL() [Client.php:1472]
+0A61 .|    |    |    <= 'http://localhost:8000/dbls/'
+0A61 .|    |    |    Prepare redirect to : http://localhost:8000/dbls/ [Client.php:1472]
+0A61 .|    |    |    => CAS_Client::getURL() [Client.php:1474]
+0A61 .|    |    |    <= 'http://localhost:8000/dbls/'
+0A61 .|    |    |    exit()
+0A61 .|    |    |    -
+0A61 .|    |    -
+0A61 .|    -
+4780 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+4780 .=> phpCAS::forceAuthentication() [index.php:7]
+4780 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+4780 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+4780 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+4780 .|    |    |    |    user = `benhall2' [Client.php:1579]
+4780 .|    |    |    <= true
+4780 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+4780 .|    |    <= true
+4780 .|    |    no need to authenticate [Client.php:1247]
+4780 .|    <= true
+4780 .<= ''
