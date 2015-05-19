@@ -1,4 +1,5 @@
 <?php
+//WE HAVE TO CHANGE THIS ONCE IT IS IN THE CTL SERVER TO REFLECT THE RIGHT FILE AND RIGHT SET UP
 require_once("/../../CAS.php");
 
 function check_auth()
