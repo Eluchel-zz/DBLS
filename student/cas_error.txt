@@ -1,0 +1,12 @@
+DB44 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+DB44 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+DB44 .|    Not a logout request [Client.php:1689]
+DB44 .<= ''
+DB44 .=> phpCAS::isAuthenticated() [core_functions.php:15]
+DB44 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+DB44 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+DB44 .|    |    |    user = `benhall2' [Client.php:1579]
+DB44 .|    |    <= true
+DB44 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+DB44 .|    <= true
+DB44 .<= true
