@@ -6,22 +6,25 @@ if(!check_auth())
 	header("Location: ../index.php");
 }
 else
+{
 	$netid = phpCAS::getUser();
+}
 ?>
 <!doctype html>
 <html lang="en" ng-app>
 	<head>
 		<meta charset="UTF-8">
-		<title>Welcome to the Student Side!</title>
+		<title>Decision Based Learning</title>
 		<script src="../libraries/angular/angular.js"></script>
 	</head>
 	<body>
 		<header>
-			
+			<div>
+				<h2>Welcome <?php echo $_SESSION[phpCAS::getUser()]["fullname"]; ?></h2>
+				</div>
 		</header>
 		<div>
-			<input type="text" ng-model="name">
-			<h2>Welcome {{name}}/<?php echo $netid; ?></h2>
+			
 		</div>
 
 		<footer>

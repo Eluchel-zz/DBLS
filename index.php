@@ -9,6 +9,7 @@ if (isset($_REQUEST['login']))
 	$query  = 'SELECT * FROM users WHERE netid="' . phpCAS::getUser() . '" LIMIT 1';
 	$result = mysqli_query($connection, $query) or die(mysqli_error($connection));
 	if($user = mysqli_fetch_assoc($result)) {
+		$_SESSION[phpCAS::getUser()]["fullname"] = $user["first_name"] . " " . $user["last_name"];
 		switch ($user["clearance"]) {
 			case 1:
 				header("Location: student/");
@@ -19,10 +20,10 @@ if (isset($_REQUEST['login']))
 			case 3:
 				header("Location: admin/");
 				break;
-			default:
-				$message="You are not regestered on this site. If you are a student please contact your instructor, if you are a instructor please contact an administrator";
 		}
 	}
+	else
+		$message = "You are not regestered on this site. If you are a student please contact your instructor, if you are a instructor please contact an administrator";
 }
 ?>
 <!doctype html>
