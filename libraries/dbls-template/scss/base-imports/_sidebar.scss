@@ -4,4 +4,19 @@ aside.sidebar {
 	width: 225px;
 	float: left;
 	border-top: 1px solid $blue4;
+	margin-top: 2em;
+	margin-bottom: 51px;
+}
+
+#sidebar {
+	background: transparent url("../images/sidebar-gray.png") top left repeat-y;
+	margin: 0;
+	position: fixed;
+	top: 96px;
+	z-index: 1001;
+	a, p {
+		padding-left: 20px;
+		font-size: 18px;
+	}
+	height: 100%
 }

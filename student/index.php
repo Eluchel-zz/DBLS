@@ -17,19 +17,19 @@ else
 		<title>Decision Based Learning</title>
 		<link rel="stylesheet" media="all" href="../libraries/dbls-template/css/base.css">
 	</head>
-	<body>
+	<body id="body">
 		<header>
 			<div>
 				<h2>Welcome <?php echo $_SESSION[phpCAS::getUser()]["fullname"]; ?></h2>
 				</div>
 		</header>
 		
-		<nav id="tabbar" class="tabbar">
-		
+		<nav id="tab-course" class="tabbar">
+			<a href="/dbls/student">Home</a>
 		</nav>
 		
 		<aside id="sidebar" class="sidebar" >
-		
+			<p>Placeholder</p>
 		</aside>
 		
 		<div id="main" ng-view></div>

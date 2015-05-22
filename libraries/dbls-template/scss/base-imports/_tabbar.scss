@@ -1,0 +1,41 @@
+#tab-course {
+	margin: 0;
+	padding: 5px 0px 5px 15px;
+	background-color: #001948;
+	border-top: 1px solid #000;
+	position: fixed;
+	top: 68px;
+	width: 100%;
+	z-index: 1002;
+	a {
+		position: relative;
+		color: #ccc;
+		font-size: 17px;
+		font-weight: normal;
+		border: none;
+		background: transparent;
+		border-bottom: 1px solid transparent;
+		margin: -1px 0;
+		position: relative;
+		-webkit-border-radius: 4px 4px 0 0;
+		-moz-border-radius: 4px 4px 0 0;
+		border-radius: 4px 4px 0 0;
+		-webkit-transition: color 0.2s;
+		-moz-transition: color 0.2s;
+		-o-transition: color 0.2s;
+		transition: color 0.2s;
+	}
+}
+
+#tab-course, nav.tabbar a {
+  -webkit-transition: padding 0.2s;
+  -moz-transition: padding 0.2s;
+  -o-transition: padding 0.2s;
+  transition: padding 0.2s;
+}
+
+nav.tabbar {
+  zoom: 1;
+  margin: 1em 0 -1px 0.5em;
+  overflow: hidden;
+}

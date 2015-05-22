@@ -10,3 +10,807 @@
 4274 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
 4274 .|    <= true
 4274 .<= true
+B2C1 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+B2C1 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+B2C1 .|    Not a logout request [Client.php:1689]
+B2C1 .<= ''
+B2C1 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+B2C1 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+B2C1 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+B2C1 .|    |    |    user = `benhall2' [Client.php:1579]
+B2C1 .|    |    <= true
+B2C1 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+B2C1 .|    <= true
+B2C1 .<= true
+F6ED .START phpCAS-1.3.3 ****************** [CAS.php:438]
+F6ED .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+F6ED .|    Not a logout request [Client.php:1689]
+F6ED .<= ''
+F6ED .=> phpCAS::isAuthenticated() [core_functions.php:16]
+F6ED .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+F6ED .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+F6ED .|    |    |    user = `benhall2' [Client.php:1579]
+F6ED .|    |    <= true
+F6ED .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+F6ED .|    <= true
+F6ED .<= true
+3DC3 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+3DC3 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+3DC3 .|    Not a logout request [Client.php:1689]
+3DC3 .<= ''
+3DC3 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+3DC3 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+3DC3 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+3DC3 .|    |    |    user = `benhall2' [Client.php:1579]
+3DC3 .|    |    <= true
+3DC3 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+3DC3 .|    <= true
+3DC3 .<= true
+23C0 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+23C0 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+23C0 .|    Not a logout request [Client.php:1689]
+23C0 .<= ''
+23C0 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+23C0 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+23C0 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+23C0 .|    |    |    user = `benhall2' [Client.php:1579]
+23C0 .|    |    <= true
+23C0 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+23C0 .|    <= true
+23C0 .<= true
+6C57 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+6C57 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+6C57 .|    Not a logout request [Client.php:1689]
+6C57 .<= ''
+6C57 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+6C57 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+6C57 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+6C57 .|    |    |    user = `benhall2' [Client.php:1579]
+6C57 .|    |    <= true
+6C57 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+6C57 .|    <= true
+6C57 .<= true
+E06A .START phpCAS-1.3.3 ****************** [CAS.php:438]
+E06A .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+E06A .|    Not a logout request [Client.php:1689]
+E06A .<= ''
+E06A .=> phpCAS::isAuthenticated() [core_functions.php:16]
+E06A .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+E06A .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+E06A .|    |    |    user = `benhall2' [Client.php:1579]
+E06A .|    |    <= true
+E06A .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+E06A .|    <= true
+E06A .<= true
+8FF1 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+8FF1 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+8FF1 .|    Not a logout request [Client.php:1689]
+8FF1 .<= ''
+8FF1 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+8FF1 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+8FF1 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+8FF1 .|    |    |    user = `benhall2' [Client.php:1579]
+8FF1 .|    |    <= true
+8FF1 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+8FF1 .|    <= true
+8FF1 .<= true
+25D3 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+25D3 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+25D3 .|    Not a logout request [Client.php:1689]
+25D3 .<= ''
+25D3 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+25D3 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+25D3 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+25D3 .|    |    |    user = `benhall2' [Client.php:1579]
+25D3 .|    |    <= true
+25D3 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+25D3 .|    <= true
+25D3 .<= true
+3316 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+3316 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+3316 .|    Not a logout request [Client.php:1689]
+3316 .<= ''
+3316 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+3316 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+3316 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+3316 .|    |    |    user = `benhall2' [Client.php:1579]
+3316 .|    |    <= true
+3316 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+3316 .|    <= true
+3316 .<= true
+1B41 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+1B41 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+1B41 .|    Not a logout request [Client.php:1689]
+1B41 .<= ''
+1B41 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+1B41 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+1B41 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+1B41 .|    |    |    user = `benhall2' [Client.php:1579]
+1B41 .|    |    <= true
+1B41 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+1B41 .|    <= true
+1B41 .<= true
+18AA .START phpCAS-1.3.3 ****************** [CAS.php:438]
+18AA .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+18AA .|    Not a logout request [Client.php:1689]
+18AA .<= ''
+18AA .=> phpCAS::isAuthenticated() [core_functions.php:16]
+18AA .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+18AA .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+18AA .|    |    |    user = `benhall2' [Client.php:1579]
+18AA .|    |    <= true
+18AA .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+18AA .|    <= true
+18AA .<= true
+430E .START phpCAS-1.3.3 ****************** [CAS.php:438]
+430E .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+430E .|    Not a logout request [Client.php:1689]
+430E .<= ''
+430E .=> phpCAS::isAuthenticated() [core_functions.php:16]
+430E .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+430E .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+430E .|    |    |    user = `benhall2' [Client.php:1579]
+430E .|    |    <= true
+430E .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+430E .|    <= true
+430E .<= true
+116F .START phpCAS-1.3.3 ****************** [CAS.php:438]
+116F .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+116F .|    Not a logout request [Client.php:1689]
+116F .<= ''
+116F .=> phpCAS::isAuthenticated() [core_functions.php:16]
+116F .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+116F .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+116F .|    |    |    user = `benhall2' [Client.php:1579]
+116F .|    |    <= true
+116F .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+116F .|    <= true
+116F .<= true
+A15A .START phpCAS-1.3.3 ****************** [CAS.php:438]
+A15A .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+A15A .|    Not a logout request [Client.php:1689]
+A15A .<= ''
+A15A .=> phpCAS::isAuthenticated() [core_functions.php:16]
+A15A .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+A15A .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+A15A .|    |    |    user = `benhall2' [Client.php:1579]
+A15A .|    |    <= true
+A15A .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+A15A .|    <= true
+A15A .<= true
+5EB1 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+5EB1 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+5EB1 .|    Not a logout request [Client.php:1689]
+5EB1 .<= ''
+5EB1 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+5EB1 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+5EB1 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+5EB1 .|    |    |    user = `benhall2' [Client.php:1579]
+5EB1 .|    |    <= true
+5EB1 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+5EB1 .|    <= true
+5EB1 .<= true
+5BD1 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+5BD1 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+5BD1 .|    Not a logout request [Client.php:1689]
+5BD1 .<= ''
+5BD1 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+5BD1 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+5BD1 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+5BD1 .|    |    |    user = `benhall2' [Client.php:1579]
+5BD1 .|    |    <= true
+5BD1 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+5BD1 .|    <= true
+5BD1 .<= true
+6D0D .START phpCAS-1.3.3 ****************** [CAS.php:438]
+6D0D .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+6D0D .|    Not a logout request [Client.php:1689]
+6D0D .<= ''
+6D0D .=> phpCAS::isAuthenticated() [core_functions.php:16]
+6D0D .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+6D0D .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+6D0D .|    |    |    user = `benhall2' [Client.php:1579]
+6D0D .|    |    <= true
+6D0D .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+6D0D .|    <= true
+6D0D .<= true
+2A3D .START phpCAS-1.3.3 ****************** [CAS.php:438]
+2A3D .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+2A3D .|    Not a logout request [Client.php:1689]
+2A3D .<= ''
+2A3D .=> phpCAS::isAuthenticated() [core_functions.php:16]
+2A3D .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+2A3D .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+2A3D .|    |    |    user = `benhall2' [Client.php:1579]
+2A3D .|    |    <= true
+2A3D .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+2A3D .|    <= true
+2A3D .<= true
+36CC .START phpCAS-1.3.3 ****************** [CAS.php:438]
+36CC .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+36CC .|    Not a logout request [Client.php:1689]
+36CC .<= ''
+36CC .=> phpCAS::isAuthenticated() [core_functions.php:16]
+36CC .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+36CC .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+36CC .|    |    |    user = `benhall2' [Client.php:1579]
+36CC .|    |    <= true
+36CC .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+36CC .|    <= true
+36CC .<= true
+4AA7 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+4AA7 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+4AA7 .|    Not a logout request [Client.php:1689]
+4AA7 .<= ''
+4AA7 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+4AA7 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+4AA7 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+4AA7 .|    |    |    user = `benhall2' [Client.php:1579]
+4AA7 .|    |    <= true
+4AA7 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+4AA7 .|    <= true
+4AA7 .<= true
+D51F .START phpCAS-1.3.3 ****************** [CAS.php:438]
+D51F .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+D51F .|    Not a logout request [Client.php:1689]
+D51F .<= ''
+D51F .=> phpCAS::isAuthenticated() [core_functions.php:16]
+D51F .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+D51F .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+D51F .|    |    |    user = `benhall2' [Client.php:1579]
+D51F .|    |    <= true
+D51F .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+D51F .|    <= true
+D51F .<= true
+F022 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+F022 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+F022 .|    Not a logout request [Client.php:1689]
+F022 .<= ''
+F022 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+F022 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+F022 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+F022 .|    |    |    user = `benhall2' [Client.php:1579]
+F022 .|    |    <= true
+F022 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+F022 .|    <= true
+F022 .<= true
+36A9 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+36A9 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+36A9 .|    Not a logout request [Client.php:1689]
+36A9 .<= ''
+36A9 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+36A9 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+36A9 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+36A9 .|    |    |    user = `benhall2' [Client.php:1579]
+36A9 .|    |    <= true
+36A9 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+36A9 .|    <= true
+36A9 .<= true
+FDA6 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+FDA6 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+FDA6 .|    Not a logout request [Client.php:1689]
+FDA6 .<= ''
+FDA6 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+FDA6 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+FDA6 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+FDA6 .|    |    |    user = `benhall2' [Client.php:1579]
+FDA6 .|    |    <= true
+FDA6 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+FDA6 .|    <= true
+FDA6 .<= true
+DE45 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+DE45 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+DE45 .|    Not a logout request [Client.php:1689]
+DE45 .<= ''
+DE45 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+DE45 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+DE45 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+DE45 .|    |    |    user = `benhall2' [Client.php:1579]
+DE45 .|    |    <= true
+DE45 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+DE45 .|    <= true
+DE45 .<= true
+60EF .START phpCAS-1.3.3 ****************** [CAS.php:438]
+60EF .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+60EF .|    Not a logout request [Client.php:1689]
+60EF .<= ''
+60EF .=> phpCAS::isAuthenticated() [core_functions.php:16]
+60EF .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+60EF .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+60EF .|    |    |    user = `benhall2' [Client.php:1579]
+60EF .|    |    <= true
+60EF .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+60EF .|    <= true
+60EF .<= true
+0BB6 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+0BB6 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+0BB6 .|    Not a logout request [Client.php:1689]
+0BB6 .<= ''
+0BB6 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+0BB6 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+0BB6 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+0BB6 .|    |    |    user = `benhall2' [Client.php:1579]
+0BB6 .|    |    <= true
+0BB6 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+0BB6 .|    <= true
+0BB6 .<= true
+4A1F .START phpCAS-1.3.3 ****************** [CAS.php:438]
+4A1F .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+4A1F .|    Not a logout request [Client.php:1689]
+4A1F .<= ''
+4A1F .=> phpCAS::isAuthenticated() [core_functions.php:16]
+4A1F .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+4A1F .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+4A1F .|    |    |    user = `benhall2' [Client.php:1579]
+4A1F .|    |    <= true
+4A1F .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+4A1F .|    <= true
+4A1F .<= true
+6E3D .START phpCAS-1.3.3 ****************** [CAS.php:438]
+6E3D .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+6E3D .|    Not a logout request [Client.php:1689]
+6E3D .<= ''
+6E3D .=> phpCAS::isAuthenticated() [core_functions.php:16]
+6E3D .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+6E3D .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+6E3D .|    |    |    user = `benhall2' [Client.php:1579]
+6E3D .|    |    <= true
+6E3D .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+6E3D .|    <= true
+6E3D .<= true
+40CA .START phpCAS-1.3.3 ****************** [CAS.php:438]
+40CA .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+40CA .|    Not a logout request [Client.php:1689]
+40CA .<= ''
+40CA .=> phpCAS::isAuthenticated() [core_functions.php:16]
+40CA .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+40CA .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+40CA .|    |    |    user = `benhall2' [Client.php:1579]
+40CA .|    |    <= true
+40CA .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+40CA .|    <= true
+40CA .<= true
+5FF7 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+5FF7 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+5FF7 .|    Not a logout request [Client.php:1689]
+5FF7 .<= ''
+5FF7 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+5FF7 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+5FF7 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+5FF7 .|    |    |    user = `benhall2' [Client.php:1579]
+5FF7 .|    |    <= true
+5FF7 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+5FF7 .|    <= true
+5FF7 .<= true
+BDC9 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+BDC9 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+BDC9 .|    Not a logout request [Client.php:1689]
+BDC9 .<= ''
+BDC9 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+BDC9 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+BDC9 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+BDC9 .|    |    |    user = `benhall2' [Client.php:1579]
+BDC9 .|    |    <= true
+BDC9 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+BDC9 .|    <= true
+BDC9 .<= true
+038C .START phpCAS-1.3.3 ****************** [CAS.php:438]
+038C .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+038C .|    Not a logout request [Client.php:1689]
+038C .<= ''
+038C .=> phpCAS::isAuthenticated() [core_functions.php:16]
+038C .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+038C .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+038C .|    |    |    user = `benhall2' [Client.php:1579]
+038C .|    |    <= true
+038C .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+038C .|    <= true
+038C .<= true
+5BFA .START phpCAS-1.3.3 ****************** [CAS.php:438]
+5BFA .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+5BFA .|    Not a logout request [Client.php:1689]
+5BFA .<= ''
+5BFA .=> phpCAS::isAuthenticated() [core_functions.php:16]
+5BFA .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+5BFA .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+5BFA .|    |    |    user = `benhall2' [Client.php:1579]
+5BFA .|    |    <= true
+5BFA .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+5BFA .|    <= true
+5BFA .<= true
+6EB5 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+6EB5 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+6EB5 .|    Not a logout request [Client.php:1689]
+6EB5 .<= ''
+6EB5 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+6EB5 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+6EB5 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+6EB5 .|    |    |    user = `benhall2' [Client.php:1579]
+6EB5 .|    |    <= true
+6EB5 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+6EB5 .|    <= true
+6EB5 .<= true
+61A0 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+61A0 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+61A0 .|    Not a logout request [Client.php:1689]
+61A0 .<= ''
+61A0 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+61A0 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+61A0 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+61A0 .|    |    |    user = `benhall2' [Client.php:1579]
+61A0 .|    |    <= true
+61A0 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+61A0 .|    <= true
+61A0 .<= true
+FA72 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+FA72 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+FA72 .|    Not a logout request [Client.php:1689]
+FA72 .<= ''
+FA72 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+FA72 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+FA72 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+FA72 .|    |    |    user = `benhall2' [Client.php:1579]
+FA72 .|    |    <= true
+FA72 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+FA72 .|    <= true
+FA72 .<= true
+7CC8 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+7CC8 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+7CC8 .|    Not a logout request [Client.php:1689]
+7CC8 .<= ''
+7CC8 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+7CC8 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+7CC8 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+7CC8 .|    |    |    user = `benhall2' [Client.php:1579]
+7CC8 .|    |    <= true
+7CC8 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+7CC8 .|    <= true
+7CC8 .<= true
+E52C .START phpCAS-1.3.3 ****************** [CAS.php:438]
+E52C .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+E52C .|    Not a logout request [Client.php:1689]
+E52C .<= ''
+E52C .=> phpCAS::isAuthenticated() [core_functions.php:16]
+E52C .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+E52C .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+E52C .|    |    |    user = `benhall2' [Client.php:1579]
+E52C .|    |    <= true
+E52C .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+E52C .|    <= true
+E52C .<= true
+D6D5 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+D6D5 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+D6D5 .|    Not a logout request [Client.php:1689]
+D6D5 .<= ''
+D6D5 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+D6D5 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+D6D5 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+D6D5 .|    |    |    user = `benhall2' [Client.php:1579]
+D6D5 .|    |    <= true
+D6D5 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+D6D5 .|    <= true
+D6D5 .<= true
+D430 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+D430 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+D430 .|    Not a logout request [Client.php:1689]
+D430 .<= ''
+D430 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+D430 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+D430 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+D430 .|    |    |    user = `benhall2' [Client.php:1579]
+D430 .|    |    <= true
+D430 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+D430 .|    <= true
+D430 .<= true
+828F .START phpCAS-1.3.3 ****************** [CAS.php:438]
+828F .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+828F .|    Not a logout request [Client.php:1689]
+828F .<= ''
+828F .=> phpCAS::isAuthenticated() [core_functions.php:16]
+828F .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+828F .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+828F .|    |    |    user = `benhall2' [Client.php:1579]
+828F .|    |    <= true
+828F .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+828F .|    <= true
+828F .<= true
+7922 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+7922 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+7922 .|    Not a logout request [Client.php:1689]
+7922 .<= ''
+7922 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+7922 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+7922 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+7922 .|    |    |    user = `benhall2' [Client.php:1579]
+7922 .|    |    <= true
+7922 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+7922 .|    <= true
+7922 .<= true
+0178 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+0178 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+0178 .|    Not a logout request [Client.php:1689]
+0178 .<= ''
+0178 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+0178 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+0178 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+0178 .|    |    |    user = `benhall2' [Client.php:1579]
+0178 .|    |    <= true
+0178 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+0178 .|    <= true
+0178 .<= true
+5745 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+5745 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+5745 .|    Not a logout request [Client.php:1689]
+5745 .<= ''
+5745 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+5745 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+5745 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+5745 .|    |    |    user = `benhall2' [Client.php:1579]
+5745 .|    |    <= true
+5745 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+5745 .|    <= true
+5745 .<= true
+33A3 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+33A3 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+33A3 .|    Not a logout request [Client.php:1689]
+33A3 .<= ''
+33A3 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+33A3 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+33A3 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+33A3 .|    |    |    user = `benhall2' [Client.php:1579]
+33A3 .|    |    <= true
+33A3 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+33A3 .|    <= true
+33A3 .<= true
+5E1E .START phpCAS-1.3.3 ****************** [CAS.php:438]
+5E1E .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+5E1E .|    Not a logout request [Client.php:1689]
+5E1E .<= ''
+5E1E .=> phpCAS::isAuthenticated() [core_functions.php:16]
+5E1E .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+5E1E .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+5E1E .|    |    |    user = `benhall2' [Client.php:1579]
+5E1E .|    |    <= true
+5E1E .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+5E1E .|    <= true
+5E1E .<= true
+228B .START phpCAS-1.3.3 ****************** [CAS.php:438]
+228B .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+228B .|    Not a logout request [Client.php:1689]
+228B .<= ''
+228B .=> phpCAS::isAuthenticated() [core_functions.php:16]
+228B .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+228B .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+228B .|    |    |    user = `benhall2' [Client.php:1579]
+228B .|    |    <= true
+228B .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+228B .|    <= true
+228B .<= true
+C17C .START phpCAS-1.3.3 ****************** [CAS.php:438]
+C17C .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+C17C .|    Not a logout request [Client.php:1689]
+C17C .<= ''
+C17C .=> phpCAS::isAuthenticated() [core_functions.php:16]
+C17C .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+C17C .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+C17C .|    |    |    user = `benhall2' [Client.php:1579]
+C17C .|    |    <= true
+C17C .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+C17C .|    <= true
+C17C .<= true
+87FC .START phpCAS-1.3.3 ****************** [CAS.php:438]
+87FC .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+87FC .|    Not a logout request [Client.php:1689]
+87FC .<= ''
+87FC .=> phpCAS::isAuthenticated() [core_functions.php:16]
+87FC .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+87FC .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+87FC .|    |    |    user = `benhall2' [Client.php:1579]
+87FC .|    |    <= true
+87FC .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+87FC .|    <= true
+87FC .<= true
+3180 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+3180 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+3180 .|    Not a logout request [Client.php:1689]
+3180 .<= ''
+3180 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+3180 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+3180 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+3180 .|    |    |    user = `benhall2' [Client.php:1579]
+3180 .|    |    <= true
+3180 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+3180 .|    <= true
+3180 .<= true
+6A49 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+6A49 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+6A49 .|    Not a logout request [Client.php:1689]
+6A49 .<= ''
+6A49 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+6A49 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+6A49 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+6A49 .|    |    |    user = `benhall2' [Client.php:1579]
+6A49 .|    |    <= true
+6A49 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+6A49 .|    <= true
+6A49 .<= true
+EF0B .START phpCAS-1.3.3 ****************** [CAS.php:438]
+EF0B .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+EF0B .|    Not a logout request [Client.php:1689]
+EF0B .<= ''
+EF0B .=> phpCAS::isAuthenticated() [core_functions.php:16]
+EF0B .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+EF0B .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+EF0B .|    |    |    user = `benhall2' [Client.php:1579]
+EF0B .|    |    <= true
+EF0B .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+EF0B .|    <= true
+EF0B .<= true
+5C26 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+5C26 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+5C26 .|    Not a logout request [Client.php:1689]
+5C26 .<= ''
+5C26 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+5C26 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+5C26 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+5C26 .|    |    |    user = `benhall2' [Client.php:1579]
+5C26 .|    |    <= true
+5C26 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+5C26 .|    <= true
+5C26 .<= true
+5E14 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+5E14 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+5E14 .|    Not a logout request [Client.php:1689]
+5E14 .<= ''
+5E14 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+5E14 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+5E14 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+5E14 .|    |    |    user = `benhall2' [Client.php:1579]
+5E14 .|    |    <= true
+5E14 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+5E14 .|    <= true
+5E14 .<= true
+D1BF .START phpCAS-1.3.3 ****************** [CAS.php:438]
+D1BF .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+D1BF .|    Not a logout request [Client.php:1689]
+D1BF .<= ''
+D1BF .=> phpCAS::isAuthenticated() [core_functions.php:16]
+D1BF .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+D1BF .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+D1BF .|    |    |    user = `benhall2' [Client.php:1579]
+D1BF .|    |    <= true
+D1BF .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+D1BF .|    <= true
+D1BF .<= true
+EF71 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+EF71 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+EF71 .|    Not a logout request [Client.php:1689]
+EF71 .<= ''
+EF71 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+EF71 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+EF71 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+EF71 .|    |    |    user = `benhall2' [Client.php:1579]
+EF71 .|    |    <= true
+EF71 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+EF71 .|    <= true
+EF71 .<= true
+1C31 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+1C31 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+1C31 .|    Not a logout request [Client.php:1689]
+1C31 .<= ''
+1C31 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+1C31 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+1C31 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+1C31 .|    |    |    user = `benhall2' [Client.php:1579]
+1C31 .|    |    <= true
+1C31 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+1C31 .|    <= true
+1C31 .<= true
+1117 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+1117 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+1117 .|    Not a logout request [Client.php:1689]
+1117 .<= ''
+1117 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+1117 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+1117 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+1117 .|    |    |    user = `benhall2' [Client.php:1579]
+1117 .|    |    <= true
+1117 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+1117 .|    <= true
+1117 .<= true
+43BF .START phpCAS-1.3.3 ****************** [CAS.php:438]
+43BF .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+43BF .|    Not a logout request [Client.php:1689]
+43BF .<= ''
+43BF .=> phpCAS::isAuthenticated() [core_functions.php:16]
+43BF .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+43BF .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+43BF .|    |    |    user = `benhall2' [Client.php:1579]
+43BF .|    |    <= true
+43BF .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+43BF .|    <= true
+43BF .<= true
+BE2D .START phpCAS-1.3.3 ****************** [CAS.php:438]
+BE2D .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+BE2D .|    Not a logout request [Client.php:1689]
+BE2D .<= ''
+BE2D .=> phpCAS::isAuthenticated() [core_functions.php:16]
+BE2D .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+BE2D .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+BE2D .|    |    |    user = `benhall2' [Client.php:1579]
+BE2D .|    |    <= true
+BE2D .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+BE2D .|    <= true
+BE2D .<= true
+2BAA .START phpCAS-1.3.3 ****************** [CAS.php:438]
+2BAA .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+2BAA .|    Not a logout request [Client.php:1689]
+2BAA .<= ''
+2BAA .=> phpCAS::isAuthenticated() [core_functions.php:16]
+2BAA .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+2BAA .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+2BAA .|    |    |    user = `benhall2' [Client.php:1579]
+2BAA .|    |    <= true
+2BAA .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+2BAA .|    <= true
+2BAA .<= true
+A80E .START phpCAS-1.3.3 ****************** [CAS.php:438]
+A80E .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+A80E .|    Not a logout request [Client.php:1689]
+A80E .<= ''
+A80E .=> phpCAS::isAuthenticated() [core_functions.php:16]
+A80E .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+A80E .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+A80E .|    |    |    user = `benhall2' [Client.php:1579]
+A80E .|    |    <= true
+A80E .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+A80E .|    <= true
+A80E .<= true
+8075 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+8075 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+8075 .|    Not a logout request [Client.php:1689]
+8075 .<= ''
+8075 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+8075 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+8075 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+8075 .|    |    |    user = `benhall2' [Client.php:1579]
+8075 .|    |    <= true
+8075 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+8075 .|    <= true
+8075 .<= true
+E46E .START phpCAS-1.3.3 ****************** [CAS.php:438]
+E46E .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+E46E .|    Not a logout request [Client.php:1689]
+E46E .<= ''
+E46E .=> phpCAS::isAuthenticated() [core_functions.php:16]
+E46E .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+E46E .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+E46E .|    |    |    user = `benhall2' [Client.php:1579]
+E46E .|    |    <= true
+E46E .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+E46E .|    <= true
+E46E .<= true
+C5EF .START phpCAS-1.3.3 ****************** [CAS.php:438]
+C5EF .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+C5EF .|    Not a logout request [Client.php:1689]
+C5EF .<= ''
+C5EF .=> phpCAS::isAuthenticated() [core_functions.php:16]
+C5EF .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+C5EF .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+C5EF .|    |    |    user = `benhall2' [Client.php:1579]
+C5EF .|    |    <= true
+C5EF .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+C5EF .|    <= true
+C5EF .<= true
+7443 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+7443 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.byu.edu',  1 => 'cas1.byu.edu',  2 => 'cas2.byu.edu',  3 => 'cas3.byu.edu',)) [CAS.php:1193]
+7443 .|    Not a logout request [Client.php:1689]
+7443 .<= ''
+7443 .=> phpCAS::isAuthenticated() [core_functions.php:16]
+7443 .|    => CAS_Client::isAuthenticated() [CAS.php:1062]
+7443 .|    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+7443 .|    |    |    user = `benhall2' [Client.php:1579]
+7443 .|    |    <= true
+7443 .|    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+7443 .|    <= true
+7443 .<= true
