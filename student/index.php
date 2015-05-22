@@ -11,11 +11,11 @@ else
 }
 ?>
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="myApp">
 	<head>
 		<meta charset="UTF-8">
 		<title>Decision Based Learning</title>
-		<script src="../libraries/angular/angular.js"></script>
+		<link rel="stylesheet" media="all" href="../libraries/dbls-template/css/base.css">
 	</head>
 	<body>
 		<header>
@@ -23,12 +23,23 @@ else
 				<h2>Welcome <?php echo $_SESSION[phpCAS::getUser()]["fullname"]; ?></h2>
 				</div>
 		</header>
-		<div>
-			
-		</div>
+		
+		<nav id="tabbar" class="tabbar">
+		
+		</nav>
+		
+		<aside id="sidebar" class="sidebar" >
+		
+		</aside>
+		
+		<div id="main" ng-view></div>
 
 		<footer>
 
 		</footer>
+		<script src="../libraries/angular/angular.js"></script>
+		<script src="../libraries/angular/angular-route.min.js"></script>
+		<script src="app/app.module.js"></script>
+		<script src="app/app.routes.js"></script>
 	</body>
 </html>

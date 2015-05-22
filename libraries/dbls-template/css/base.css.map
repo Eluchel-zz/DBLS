@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;;;;;;AAEA,aAAc;EACb,KAAK,EAAE,KAAK;EACZ,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,cAAgB",
+"sources": ["../scss/base-imports/_sidebar.scss"],
+"names": [],
+"file": "base.css"
+}

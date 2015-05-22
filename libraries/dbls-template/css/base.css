@@ -1,0 +1,15 @@
+/***********************************************
+	file: base.scss
+	Author: Ben Hall & Nic Lush
+***********************************************/
+/* BYU Blue */
+/* Highlight Yellow */
+/* Reds */
+/* Gray */
+/* Sidebar */
+aside.sidebar {
+  width: 225px;
+  float: left;
+  border-top: 1px solid #369; }
+
+/*# sourceMappingURL=base.css.map */
